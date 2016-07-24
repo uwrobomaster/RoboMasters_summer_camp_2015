@@ -1,0 +1,404 @@
+/*******************************************************************************
+* Function Name  : Can_Driver
+* Description    : Can总线的初始化，Can的发送函数，Can的接收中断
+* Author         : Cp
+* Date           : 2015/4/4
+* Note           :
+*                  2015.4.4
+*                 加入volatile类型防优化——Johnny Sun
+s32 CanInit()
+void Send_GimBalMotor( int16_t Yaw_Give_Current, int16_t Pitch_Give_Current,CAN_TypeDef* CANx)
+void Send_UnderMotor( s32 Speed_LF, s32 Speed_RF, s32 Speed_LB, s32 Speed_RB,CAN_TypeDef* CANx)
+void Send_UnderYaw( float Yaw, CAN_TypeDef* CANx)
+void Send_GimbalAngle( float Enc_Yaw, float Enc_Pitch , CAN_TypeDef* CANx)
+void Send_GimbalPitch(float Pitch , CAN_TypeDef* CANx)
+void Send_ControlData(s16 Pitch_Speed , s16 Yaw_Speed, u8 Shoot_Flag,u8 Auto_Flag, CAN_TypeDef* CANx)
+
+*******************************************************************************/
+#include "CAN_driver.h"
+volatile MotorTypeDef  g_Motor_Yaw,g_Motor_Pitch;      		 //两轴云台电机参数  机械角度，给定电流
+volatile s16           g_iYaw_Speed,g_iPitch_Speed;   	     //鼠标的x,y轴的速度
+volatile s32			  g_iTarget_Yaw,g_iTarget_Pitch;	         //鼠标给定x,y轴位置
+volatile float         g_fUnder_Yaw;							 //地盘Yaw值
+volatile float         g_fGimbal_EncYaw, g_fGimbal_EncPitch;	 //云台Yaw,Pitch 编码器值
+volatile float         g_fGimbal_Pitch;						 //云台陀螺仪Pitch
+u8            g_ucCAN_buffer[8];					 
+volatile u32            g_ucShoot_Flag, g_ucAuto_Flag;		 //射击标志位，自动瞄准标志位
+volatile s32  g_iUnder_SpeedRF, g_iUnder_SpeedRB, g_iUnder_SpeedLF, g_iUnder_SpeedLB;
+													 //底盘电机4个速度
+
+
+/*******************************************************************************
+* Function Name  : Can_Init
+* Description    : Can初始化，与主控通信
+* Input          : CAN1/CAN2
+* Output         : None
+* Return         : 1 Success
+                   0 False
+*******************************************************************************/
+s32 CanInit(void)
+{
+	Can_Init(CAN1);
+    Can_Init(CAN2);
+	return 1;
+}
+
+void Can_Init(CAN_TypeDef* CANx)
+{
+    GPIO_InitTypeDef       Gpio_Structure;
+    CAN_InitTypeDef        Can_Structure;
+    NVIC_InitTypeDef         NVIC_InitStructure;
+    CAN_FilterInitTypeDef  Can_filter_Structure;
+
+    if (CANx == CAN1)
+    {
+        RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOB, ENABLE);
+        RCC_APB1PeriphClockCmd(RCC_APB1Periph_CAN1 | RCC_APB1Periph_CAN2, ENABLE);
+
+        GPIO_PinAFConfig(GPIOB, GPIO_PinSource8,
+                         GPIO_AF_CAN1);        //CAN1 PB9  PB10 引脚
+        GPIO_PinAFConfig(GPIOB, GPIO_PinSource9, GPIO_AF_CAN1);
+
+        Gpio_Structure.GPIO_Pin = GPIO_Pin_8 | GPIO_Pin_9 ;
+        Gpio_Structure.GPIO_Mode = GPIO_Mode_AF;
+        GPIO_Init(GPIOB, &Gpio_Structure);
+        
+        NVIC_InitStructure.NVIC_IRQChannel = CAN1_RX0_IRQn;
+        NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0;
+        NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0;
+        NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
+        NVIC_Init(&NVIC_InitStructure);
+    }
+    else if (CANx == CAN2)
+    {
+        RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOB, ENABLE);
+        RCC_APB1PeriphClockCmd(RCC_APB1Periph_CAN1 | RCC_APB1Periph_CAN2, ENABLE);
+
+        GPIO_PinAFConfig(GPIOB, GPIO_PinSource5,
+                         GPIO_AF_CAN2);        //CAN2 PB4 PB5 引脚
+        GPIO_PinAFConfig(GPIOB, GPIO_PinSource4, GPIO_AF_CAN2);
+
+        Gpio_Structure.GPIO_Pin = GPIO_Pin_5 | GPIO_Pin_4 ;
+        Gpio_Structure.GPIO_Mode = GPIO_Mode_AF;
+        GPIO_Init(GPIOB, &Gpio_Structure);
+        
+        NVIC_InitStructure.NVIC_IRQChannel = CAN2_RX0_IRQn;
+        NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0;
+        NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0;
+        NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
+        NVIC_Init(&NVIC_InitStructure);
+    }
+    CAN_DeInit(CANx);
+    CAN_StructInit(&Can_Structure);
+    Can_Structure.CAN_TTCM = DISABLE;               //非时间触发通信模式
+    Can_Structure.CAN_ABOM = ENABLE;                //失能软件自动离线管理
+    Can_Structure.CAN_AWUM =
+        DISABLE;              //睡眠模式通过软件唤醒(清除CAN->MCR的SLEEP位)
+    Can_Structure.CAN_NART = DISABLE;               //报文自动传送
+    Can_Structure.CAN_RFLM = DISABLE;               //FIFO不锁定,新报文覆盖旧报文
+    Can_Structure.CAN_TXFP = ENABLE;                //FIFO优先级由发送请求顺序决定
+    Can_Structure.CAN_Mode = CAN_Mode_Normal;       //模式设置
+    Can_Structure.CAN_SJW  = CAN_SJW_1tq;           //重新同步跳跃时间单元，0-3
+    Can_Structure.CAN_BS1 = CAN_BS1_9tq;            //时间段1的时间单元，0-15
+    Can_Structure.CAN_BS2 = CAN_BS2_4tq;            //时间段F2的时间单元，0-7
+    Can_Structure.CAN_Prescaler =
+        3;               //PCLK1=42M，CAN BaudRate 42/(1+9+4)/3=1Mbps
+    CAN_Init(CANx, &Can_Structure);
+    Can_filter_Structure.CAN_FilterNumber = 14;
+    Can_filter_Structure.CAN_FilterMode = CAN_FilterMode_IdMask;
+    Can_filter_Structure.CAN_FilterScale = CAN_FilterScale_32bit;
+    Can_filter_Structure.CAN_FilterIdHigh = 0x0000;
+    Can_filter_Structure.CAN_FilterIdLow = 0x0000;
+    Can_filter_Structure.CAN_FilterMaskIdHigh = 0x0000;
+    Can_filter_Structure.CAN_FilterMaskIdLow = 0x0000;
+    Can_filter_Structure.CAN_FilterFIFOAssignment = 0;
+    Can_filter_Structure.CAN_FilterActivation = ENABLE;
+    CAN_FilterInit(&Can_filter_Structure);
+    CAN_ITConfig(CANx, CAN_IT_FMP0, ENABLE);
+}
+
+/*******************************************************************************
+* Function Name  : Can_Send_Msg
+* Description    : can发送一组数据
+* Input          : len:数据长度,最大为8
+                     msg:数据指针,最大为8个字节.
+                     id:发送标识符
+* Output         : None
+* Return         : 1,成功;
+                   0,失败;
+*******************************************************************************/
+u8 mbox_queue[3] = {0};
+u8 mbox_index = 0;
+u8 Can_Send_Msg(u8* msg, u8 len, uint32_t id, CAN_TypeDef* CANx)
+{
+    u8 mbox;
+    u16 i = 0;
+    CanTxMsg TxMessage;
+    TxMessage.StdId = id;                   //标准标识符，11位
+    TxMessage.IDE = CAN_Id_Standard;        //使用标准标识符
+    TxMessage.RTR = CAN_RTR_Data;           //发送数据帧
+    TxMessage.DLC = len;                    //发送len字节
+    for (i = 0; i < len; i++)
+        TxMessage.Data[i] = msg[i];
+    mbox = CAN_Transmit(CANx, &TxMessage);    //获取邮箱号
+    mbox_queue[mbox_index] = mbox;
+    mbox_index++;
+    if (mbox_index > 2)
+        mbox_index = 0;
+    while ((CAN_TransmitStatus(CANx, mbox) != CAN_TxStatus_Ok)
+           && (i < 0xfff))i++;   //等待发送结束
+    if (i >= 0xfff)return 0;
+    return 1;
+}
+
+/*******************************************************************************
+* Function Name  : Send_GimbalMotor
+* Description    : can发送一组电流数据给云台电机
+* Input          : Yaw_Given_Current ,Pitch_Given_Current(给定电流 -5000~+5000) , CANx
+* Output         : None
+* Return         : None
+                   None
+*******************************************************************************/
+void Send_GimBalMotor( int16_t Yaw_Give_Current, int16_t Pitch_Give_Current,
+                       CAN_TypeDef* CANx)
+{
+    if (Pitch_Give_Current > 5000)
+        Pitch_Give_Current = 5000;
+    if (Pitch_Give_Current < -5000)
+        Pitch_Give_Current = -5000;
+    if (Yaw_Give_Current > 5000)
+        Yaw_Give_Current = 5000;
+    if (Yaw_Give_Current < -5000)
+        Yaw_Give_Current = -5000;
+
+    g_ucCAN_buffer[0] = Pitch_Give_Current >> 8 & 0xff;
+    g_ucCAN_buffer[1] = Pitch_Give_Current >> 0 & 0xff;
+    g_ucCAN_buffer[2] = 0;
+    g_ucCAN_buffer[3] = 0;
+    g_ucCAN_buffer[4] = Yaw_Give_Current >> 8 & 0xff;
+    g_ucCAN_buffer[5] = Yaw_Give_Current >> 0 & 0xff;
+    g_ucCAN_buffer[6] = 0;
+    g_ucCAN_buffer[7] = 0;
+    Can_Send_Msg(g_ucCAN_buffer, 0x08, Board_StdId , CANx);
+}
+
+/*******************************************************************************
+* Function Name  : Send_GimbalMotor
+* Description    : can发送一组速度数据给地盘电机
+* Input          : Yaw_Given_Current ,Pitch_Given_Current(给定电流 -5000~+5000) , CANx
+* Output         : None
+* Return         : None
+                   None
+*******************************************************************************/
+void Send_UnderMotor( s32 Speed_LF, s32 Speed_RF, s32 Speed_LB, s32 Speed_RB,
+                      CAN_TypeDef* CANx)
+{
+
+    g_ucCAN_buffer[0] = Speed_LF >> 8 & 0xff;
+    g_ucCAN_buffer[1] = Speed_LF >> 0 & 0xff;
+    g_ucCAN_buffer[2] = Speed_RF >> 8 & 0xff;
+    g_ucCAN_buffer[3] = Speed_RF >> 0 & 0xff;
+    g_ucCAN_buffer[4] = Speed_LB >> 8 & 0xff;
+    g_ucCAN_buffer[5] = Speed_LB >> 0 & 0xff;
+    g_ucCAN_buffer[6] = Speed_RB >> 8 & 0xff;
+    g_ucCAN_buffer[7] = Speed_RB >> 0 & 0xff;
+    Can_Send_Msg(g_ucCAN_buffer, 0x08, UnderPan_Speed , CANx);
+}
+
+/*******************************************************************************
+* Function Name  : Send_UnderYaw
+* Description    : can发送地盘的Yaw值
+* Input          : 地盘的Yaw  , CANx
+* Output         : None
+* Return         : None
+                   None
+*******************************************************************************/
+void Send_UnderYaw( float Yaw, CAN_TypeDef* CANx)
+{
+    union float_trans Trans_temple;
+    Trans_temple.float_form  = Yaw;
+    g_ucCAN_buffer[0] = Trans_temple.uchar_form[0];
+    g_ucCAN_buffer[1] = Trans_temple.uchar_form[1];
+    g_ucCAN_buffer[2] = Trans_temple.uchar_form[2];
+    g_ucCAN_buffer[3] = Trans_temple.uchar_form[3];
+    g_ucCAN_buffer[4] = 0;
+    g_ucCAN_buffer[5] = 0;
+    g_ucCAN_buffer[6] = 0;
+    g_ucCAN_buffer[7] = 0;
+    Can_Send_Msg(g_ucCAN_buffer, 0x08, UnderPan_Yaw , CANx);
+}
+
+/*******************************************************************************
+* Function Name  : Send_GimbalAngle
+* Description    : can发送云台的Pitch,Yaw值
+* Input          : 云台的水平编码器Enc_Yaw ,云台的垂直编码艵nc_Pitch , CANx
+* Output         : None
+* Return         : None
+                   None
+*******************************************************************************/
+void Send_GimbalAngle( float Enc_Yaw, float Enc_Pitch , CAN_TypeDef* CANx)
+{
+    union float_trans Trans_temple;
+    Trans_temple.float_form  = Enc_Yaw;
+    g_ucCAN_buffer[0] = Trans_temple.uchar_form[0];
+    g_ucCAN_buffer[1] = Trans_temple.uchar_form[1];
+    g_ucCAN_buffer[2] = Trans_temple.uchar_form[2];
+    g_ucCAN_buffer[3] = Trans_temple.uchar_form[3];
+    Trans_temple.float_form  = Enc_Pitch;
+    g_ucCAN_buffer[4] = Trans_temple.uchar_form[0];
+    g_ucCAN_buffer[5] = Trans_temple.uchar_form[1];
+    g_ucCAN_buffer[6] = Trans_temple.uchar_form[2];
+    g_ucCAN_buffer[7] = Trans_temple.uchar_form[3];
+    Can_Send_Msg(g_ucCAN_buffer, 0x08, Gimbal_Angle , CANx);
+}
+
+/*******************************************************************************
+* Function Name  : Send_GimbalPitch
+* Description    : can发送云台上9250的Pitch值
+* Input          : 云台Pitch, CANx
+* Output         : None
+* Return         : None
+                   None
+*******************************************************************************/
+void Send_GimbalPitch(float Pitch , CAN_TypeDef* CANx)
+{
+    union float_trans Trans_temple;
+    Trans_temple.float_form  = Pitch;
+    g_ucCAN_buffer[0] = Trans_temple.uchar_form[0];
+    g_ucCAN_buffer[1] = Trans_temple.uchar_form[1];
+    g_ucCAN_buffer[2] = Trans_temple.uchar_form[2];
+    g_ucCAN_buffer[3] = Trans_temple.uchar_form[3];
+    g_ucCAN_buffer[4] = 0;
+    g_ucCAN_buffer[5] = 0;
+    g_ucCAN_buffer[6] = 0;
+    g_ucCAN_buffer[7] = 0;
+    Can_Send_Msg(g_ucCAN_buffer, 0x08, Gimbal_Pitch , CANx);
+}
+
+/*******************************************************************************
+* Function Name  : Send_ControlData
+* Description    : can发送控制数据
+* Input          : 鼠标的y轴速度 Pitch_Speed  鼠标的x轴速度 Yaw_Speed  射击标志位 Shoot_Flag 自动瞄准 Auto_Flag
+* Output         : None
+* Return         : None
+                   None
+*******************************************************************************/
+void Send_ControlData(s16 Pitch_Speed , s16 Yaw_Speed, u8 Shoot_Flag,
+                      u8 Auto_Flag, CAN_TypeDef* CANx)
+{
+
+    g_ucCAN_buffer[0] = Shoot_Flag;
+    g_ucCAN_buffer[1] = Auto_Flag;
+    g_ucCAN_buffer[2] = 0;
+    g_ucCAN_buffer[3] = 0;
+    g_ucCAN_buffer[4] = Yaw_Speed >> 8 & 0xff;
+    g_ucCAN_buffer[5] = Yaw_Speed >> 0 & 0xff;
+    g_ucCAN_buffer[6] = Pitch_Speed >> 8 & 0xff;
+    g_ucCAN_buffer[7] = Pitch_Speed >> 0 & 0xff;
+    Can_Send_Msg(g_ucCAN_buffer, 0x08, Control_Data , CANx);
+}
+
+
+/*******************************************************************************
+* Function Name  : CAN1_RX0_IRQHandler
+* Description    : can中断接收
+* Input          : None
+* Output         : g_Motor_Yaw/g_Motor_Pitch        云台电机结构体参数
+
+* Return         : None
+*******************************************************************************/
+
+void CAN1_RX0_IRQHandler(void)
+{
+    union float_trans Trans_temple;
+    CanRxMsg RxMessage;
+    if (CAN_GetITStatus(CAN1, CAN_IT_FMP0) != RESET)
+    {
+        CAN_Receive(CAN1, CAN_FIFO0, &RxMessage);
+        if (RxMessage.StdId == Yaw_StdId )
+        {
+            g_Motor_Yaw.Measure_angle   = (u16)RxMessage.Data[0] << 8 |
+                                          RxMessage.Data[1];     //接收机械角度值
+            g_Motor_Yaw.Measure_current = (u16)RxMessage.Data[2] << 8 |
+                                          RxMessage.Data[3];    //接收转矩电流测量值
+            g_Motor_Yaw.Given_current   = (u16)RxMessage.Data[4] << 8 |
+                                          RxMessage.Data[5];      //接收转矩电流给定值
+            g_Motor_Yaw.Hall_Switch     =
+                RxMessage.Data[6];                                     //接收霍尔开关值
+        }
+        if (RxMessage.StdId == Pitch_StdId )
+        {
+            g_Motor_Pitch.Measure_angle   = (u16)RxMessage.Data[0] << 8 |
+                                            RxMessage.Data[1];   //接收机械角度值
+            g_Motor_Pitch.Measure_current = (u16)RxMessage.Data[2] << 8 |
+                                            RxMessage.Data[3];  //接收转矩电流测量值
+            g_Motor_Pitch.Given_current  = (u16)RxMessage.Data[4] << 8 |
+                                           RxMessage.Data[5];   //接收转矩电流给定值
+            g_Motor_Pitch.Hall_Switch  =
+                RxMessage.Data[6];                              //接收霍尔开关值
+        }
+        if (RxMessage.StdId == UnderPan_Speed )          		//接收地盘速度
+        {
+            g_iUnder_SpeedLF = (u32)RxMessage.Data[0] << 8 | (u32)RxMessage.Data[1];
+            g_iUnder_SpeedRF = (u32)RxMessage.Data[2] << 8 | (u32)RxMessage.Data[3];
+            g_iUnder_SpeedLB = (u32)RxMessage.Data[4] << 8 | (u32)RxMessage.Data[5];
+            g_iUnder_SpeedRB = (u32)RxMessage.Data[6] << 8 | (u32)RxMessage.Data[7];
+        }
+        if (RxMessage.StdId == UnderPan_Yaw )					//接收地盘Yaw值
+        {
+            Trans_temple.uchar_form [0] = RxMessage.Data[0];
+            Trans_temple.uchar_form [1] = RxMessage.Data[1];
+            Trans_temple.uchar_form [2] = RxMessage.Data[2];
+            Trans_temple.uchar_form [3] = RxMessage.Data[3];
+            g_fUnder_Yaw = Trans_temple.float_form ;
+        }
+        if (RxMessage.StdId == Gimbal_Angle)					//接收云台编码器角度
+        {
+            Trans_temple.uchar_form [0] = RxMessage.Data [0];
+            Trans_temple.uchar_form [1] = RxMessage.Data [1];
+            Trans_temple.uchar_form [2] = RxMessage.Data [2];
+            Trans_temple.uchar_form [3] = RxMessage.Data [3];
+            g_fGimbal_EncYaw = Trans_temple.float_form ;
+            Trans_temple.uchar_form [0] = RxMessage.Data [4];
+            Trans_temple.uchar_form [1] = RxMessage.Data [5];
+            Trans_temple.uchar_form [2] = RxMessage.Data [6];
+            Trans_temple.uchar_form [3] = RxMessage.Data [7];
+            g_fGimbal_EncPitch = Trans_temple.float_form ;
+        }
+        if (RxMessage.StdId == Gimbal_Pitch)					//接收云台陀螺仪Yaw值
+        {
+            Trans_temple.uchar_form [0] = RxMessage.Data [0];
+            Trans_temple.uchar_form [1] = RxMessage.Data [1];
+            Trans_temple.uchar_form [2] = RxMessage.Data [2];
+            Trans_temple.uchar_form [3] = RxMessage.Data [3];
+            g_fGimbal_Pitch = Trans_temple.float_form ;
+        }
+        if (RxMessage.StdId == Control_Data)					//接收控制数据  
+        {
+            g_ucShoot_Flag = RxMessage.Data [0];
+            g_ucAuto_Flag  = RxMessage.Data [1];
+            g_iYaw_Speed   = (u16)RxMessage.Data [4] << 8 | RxMessage.Data [5];
+            g_iPitch_Speed = (u16)RxMessage.Data [6] << 8 | RxMessage.Data [7];
+        }
+    }
+}
+/*******************************************************************************
+* Function Name  : CAN2_RX0_IRQHandler
+* Description    : can中断接收
+* Input          : None
+* Output         : None
+* Return         : None
+*******************************************************************************/
+void CAN2_RX0_IRQHandler(void)
+{
+    CanRxMsg RxMessage;
+
+    if (CAN_GetITStatus(CAN2, CAN_IT_FMP0) != RESET)
+    {
+        CAN_Receive(CAN2, CAN_FIFO0, &RxMessage);
+
+    }
+}
+
+
+

@@ -1,0 +1,42 @@
+/********************************************************************************
+ * 文件名  ：main.c
+ * 描述    ：定时器TIM1产生四路PWM波输出。
+ *           - PA.06: (TIM1_CH1)
+ *           - PA.07: (TIM1_CH2)
+ *           - PB.00: (TIM1_CH3)
+ *           - PB.01: (TIM1_CH4) 
+ *           TIM3 Channel1 duty cycle = (TIM3_CCR1/ TIM3_ARR)* 100 = 50%
+ *           TIM3 Channel2 duty cycle = (TIM3_CCR2/ TIM3_ARR)* 100 = 37.5%
+ *           TIM3 Channel3 duty cycle = (TIM3_CCR3/ TIM3_ARR)* 100 = 25%
+ *           TIM3 Channel4 duty cycle = (TIM3_CCR4/ TIM3_ARR)* 100 = 12.5%
+ *       
+ * 实验平台：野火STM32开发板
+ * 库版本  ：ST3.0.0
+ *
+ * 作者    ：fire  QQ: 313303034 
+ * 博客    ：firestm32.blog.chinaunix.net
+**********************************************************************************/
+#include "stm32f10x.h"
+#include "pwm_output.h"
+
+/*
+ * 函数名：main
+ * 描述  ：主函数
+ * 输入  ：无
+ * 输出  ：无
+ */
+int main(void)
+{
+  /* 配置系统时钟为72M */
+	SystemInit();
+ 
+	/* TIM3 PWM波输出初始化，并使能TIM3 PWM输出 */
+	TIM3_PWM_Init();
+
+  while (1)
+  {}
+}
+
+
+/**********************************END OF FILE*************************************/
+

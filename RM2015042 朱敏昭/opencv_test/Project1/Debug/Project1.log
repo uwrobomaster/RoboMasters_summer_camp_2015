@@ -1,0 +1,21 @@
+﻿Build started 2015/8/14 15:54:15.
+     1>Project "C:\Users\dji\Desktop\zmz\Project1\Project1\Project1.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Source.cpp
+         Source.cpp
+     1>c:\users\dji\desktop\zmz\project1\project1\source.cpp(134): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\dji\desktop\zmz\project1\project1\source.cpp(135): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\dji\desktop\zmz\project1\project1\source.cpp(143): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\dji\desktop\zmz\project1\project1\source.cpp(144): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\dji\desktop\zmz\project1\project1\source.cpp(167): warning C4244: 'initializing' : conversion from 'double' to 'long', possible loss of data
+     1>c:\users\dji\desktop\zmz\project1\project1\source.cpp(191): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>c:\users\dji\desktop\zmz\project1\project1\source.cpp(474): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\dji\desktop\zmz\project1\project1\source.cpp(485): warning C4101: 'j' : unreferenced local variable
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\dji\Desktop\zmz\Project1\Debug\Project1.exe" /INCREMENTAL /NOLOGO opencv_calib3d248d.lib opencv_contrib248d.lib opencv_core248d.lib opencv_features2d248d.lib opencv_flann248d.lib opencv_gpu248d.lib opencv_highgui248d.lib opencv_imgproc248d.lib opencv_legacy248d.lib opencv_ml248d.lib opencv_nonfree248d.lib opencv_objdetect248d.lib opencv_ocl248d.lib opencv_photo248d.lib opencv_stitching248d.lib opencv_superres248d.lib opencv_ts248d.lib opencv_video248d.lib opencv_videostab248d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\dji\Desktop\zmz\Project1\Debug\Project1.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\dji\Desktop\zmz\Project1\Debug\Project1.lib" /MACHINE:X86 Debug\Source.obj
+         Project1.vcxproj -> C:\Users\dji\Desktop\zmz\Project1\Debug\Project1.exe
+     1>Done Building Project "C:\Users\dji\Desktop\zmz\Project1\Project1\Project1.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.68

@@ -1,0 +1,212 @@
+#include <opencv2\opencv.hpp>
+#include <iostream>
+#include <string>
+#include <time.h>
+#include <math.h>
+
+using namespace cv;
+using namespace std;
+
+void getrect(Mat src, CvPoint* result);
+int main()
+{
+	//VideoCapture capture(0);
+	VideoCapture capture("C:\\Users\\dji\\Desktop\\VideoTest12.avi");
+	long totalFrameNumber = capture.get(CV_CAP_PROP_FRAME_COUNT);
+	cout << "视频" << totalFrameNumber << "帧" << endl;
+	CvPoint re[255];
+	Mat frame;
+	//Mat frame = imread("C:\\Users\\dji\\Desktop\\qwe.jpg");
+	
+	//capture.set(CV_CAP_PROP_FRAME_WIDTH, 640);
+	//capture.set(CV_CAP_PROP_FRAME_HEIGHT, 480);
+	//Size pic_size = Size((int)capture.get(CV_CAP_PROP_FRAME_WIDTH), (int)capture.get(CV_CAP_PROP_FRAME_HEIGHT));
+	while (1)
+	{
+		//clock_t start, end;
+		//double totaltime;
+		//start = clock();
+		capture >> frame;
+		//frame = imread("C:\\Users\\dji\\Desktop\\abc.bmp");
+		resize(frame, frame,Size(3*frame.cols,3*frame.rows));
+		//if (frame.empty())
+		//{
+		//	cout << "img1 empty error";
+		//	return -1;
+		//}
+		//}
+		//1 预处理
+		/*Mat gray;
+		Mat binary;
+		Mat canny;
+		cvtColor(frame, gray, CV_RGB2GRAY); //frame转灰度图gray
+		//threshold(gray, binary, 150, 255, 0);
+		medianBlur(gray, gray, 3); //中值滤波
+		//2 轮廓预处理
+		binary.copyTo(canny);
+		Mat element(3, 3, CV_8U, Scalar(1));
+		//Mat element = getStructuringElement(CV_SHAPE_RECT, Size(3,3), Point(1,1));
+		morphologyEx(canny, canny, MORPH_CLOSE, element, Point(-1, -1), 3);//闭运算
+		//Canny(canny, canny, 5, 250, 10);
+		imshow("canny", canny);
+
+		IplImage src(canny);
+		IplImage* dst = &src;
+		CvMemStorage* storage = cvCreateMemStorage(0);
+		CvSeq* circles = cvHoughCircles(dst, storage, CV_HOUGH_GRADIENT, 2, dst->width / 8, 250, 230, 10, 150);
+		for (int i = 0; i < circles->total; i++)
+		{
+			float* p = (float*)cvGetSeqElem(circles, i);
+			cout << p[0] << "   " << p[1] << "   " << p[2];
+			CvPoint pt = cvPoint(cvRound(p[0]), cvRound(p[1]));
+			circle(frame, pt, cvRound(p[2]), CV_RGB(255, 0, 0), 10);
+			imshow("123", frame);
+			waitKey(0);
+		}*/
+		getrect(frame, re);
+		//waitKey(0);
+		//waitKey(10);
+	}
+	
+	return 0;
+}
+
+	void getrect(Mat src, CvPoint* result)
+	{
+		//1 预处理
+		Mat gray;
+		Mat binary;
+		Mat canny;
+		cvtColor(src, gray, CV_RGB2GRAY); //frame转灰度图gray
+		adaptiveThreshold(gray, binary, 1, CV_ADAPTIVE_THRESH_MEAN_C, CV_THRESH_BINARY, 55, 7);//二值化
+		//threshold(gray, binary, 50, 255, CV_THRESH_BINARY);
+		medianBlur(binary, binary, 3); //中值滤波
+		imshow("src", src);
+		//2 轮廓预处理
+		binary.copyTo(canny);
+		//IplConvKernel* mykernel_1R = cvCreateStructuringElementEx(5,5,3,3,CV_SHAPE_RECT,NULL);
+		//cvMorphologyEx(img_binary,img_binary,NULL,mykernel_1R,CV_MOP_CLOSE,3);
+		//Mat element(3, 3, CV_8U, Scalar(1));
+		//Mat element = getStructuringElement(CV_SHAPE_RECT, Size(3,3), Point(1,1));
+		//morphologyEx(canny, canny, MORPH_CLOSE, element, Point(-1, -1), 3);//闭运算
+		//Sobel(canny, canny, CV_16S, 1, 1);
+
+		uchar* pp = canny.data;
+		//转换成灰度 （1变255）
+		for (int i = 0; i<canny.rows; ++i)
+		{
+			for (int j = 0; j<canny.cols; ++j)
+			{
+				if (pp[((i)*canny.cols) + (j)] == 1)
+					pp[((i)*canny.cols) + (j)] = 255;
+				//else
+				//	pp[((i)*canny.cols) + (j)] = 255;
+			}
+		}
+		imshow("binary", canny);
+		//Canny(canny, canny, 10, 40, 3);
+		//imshow("canny", canny);
+
+		//3 提取轮廓/匹配轮廓
+		//提取轮廓
+		vector<vector<Point>> contours;//返回轮廓的容器
+		vector<Vec4i> hierarchy;//用于存储轮廓
+
+		findContours(canny, contours, hierarchy, CV_RETR_TREE, CV_CHAIN_APPROX_SIMPLE, Point(0, 0));//检索所有的轮廓：重构嵌套轮廓的整个层，压缩水平的、垂直的和斜的部分，只保留他们的终点部分，偏移量为0
+		//查找轮廓
+		//除去太短的轮廓     
+		int lmin = canny.rows / 12;//最小宽度
+		int amin = 1500;// (int)(canny.rows * canny.cols * 0.0005);//最小面积
+		int amax = 3000;// (int)(canny.rows * canny.cols * 0.01);//最大面积
+		vector<std::vector<cv::Point>>::iterator itc = contours.begin();
+		//while (itc != contours.end())
+		//{
+		//	if (itc->size() < lmin);
+		//		//itc = contours.erase(itc);
+		//	else
+		//	{
+		//		++itc;
+		//	}
+		//}
+
+		vector<Rect>boundRect(contours.size());
+		int num = 0;
+		Mat drawing = Mat::zeros(canny.size(), CV_8UC3);
+
+		//double min_match = 5;
+		//int match_num = -1;
+
+		for (int i = 0; i < contours.size(); i++)
+		{
+			double area = contourArea(contours[i]);
+			if (area < amin)//去除面积小的轮廓
+				continue;
+			if (area > amax)//去除面积大的轮廓
+				continue;
+			Moments moment;
+			double hu[7];
+			moment = moments(contours[i], false);
+			HuMoments(moment, hu); //计算hu不变矩
+
+			CvPoint result[255];
+			int j;
+			vector<std::vector<cv::Point>>::iterator itc2;
+
+			//查找正方形
+			//if ((hu[0] < 0.1666*1.1) && (hu[0]> 0.16666 / 1.1))// &&
+			//(hu[1] < 5e-06 * 10000) && (hu[1] >5e-6 / 10000))
+
+			//0.408137     0.0244482     0.0566028
+			//0.313063     0.0197965     0.00708513
+			//查找二维码
+			//if (
+				((hu[0] < 0.408137*1.05) && (hu[0]>0.408137 / 1.05)
+				&& (hu[1] < 0.0244482 * 10) && (hu[1] >0.0244482 / 10)
+				&& (hu[2] < 0.0566028 * 100) && (hu[2] >0.0566028 / 100))
+				|| ((hu[0] < 0.313063*1.05) && (hu[0]>0.313063 / 1.05) &&
+				(hu[1] < 0.0197965 * 10) && (hu[1] > 0.0197965 / 10)
+				&& (hu[2] < 0.00708513 * 100) && (hu[2] > 0.00708513 / 100)))
+			//if (1)
+			{
+
+				Scalar color = Scalar(255, 255, 0);
+				//float sumx, sumy;
+				//sumx = 0, sumy = 0;
+
+				//for (j = 0; j<contours[i].size(); j++)
+				//{
+				//	sumx += contours[i][j].x;
+				//	sumy += contours[i][j].y;
+				//}
+				drawContours(drawing, contours, i, color, 2, 8, hierarchy, 0, Point());
+				//circle(drawing, cvPoint(sumx / contours[i].size(), sumy / contours[i].size()), 5, color, 2);
+				boundRect[num] = boundingRect(Mat(contours[i]));
+				if (num != 0 && (abs(result[num - 1].x - (boundRect[num].x + boundRect[num].width / 2)) < 2) &&
+					(result[num - 1].y - (boundRect[num].y + boundRect[num].height / 2) < 2))
+					continue;
+				else
+				{
+					result[num].x = boundRect[num].x + boundRect[num].width / 2;
+					result[num].y = boundRect[num].y + boundRect[num].height / 2;
+					cout << i << ":   " << hu[0] << "     " << hu[1] <<"     " << hu[2] << endl;
+					//cout << i << ":   " << result[num].x << "     " << result[num].y << endl;
+				}
+				circle(drawing, result[num], 5, color, 2);
+				imwrite("abc.bmp", drawing);
+				imshow("123", drawing);
+				num++;
+				waitKey(1);
+			}
+			else
+			{
+				//drawContours( drawing, contours, i, Scalar( 0,255,0 ), 2, 8, hierarchy, 0, Point() );
+				//imshow("123",drawing);
+				//waitKey(2);
+			}
+
+
+		}
+		cout << "num" << num << endl;
+		//imshow("contours", frame);
+		waitKey(0);
+	}

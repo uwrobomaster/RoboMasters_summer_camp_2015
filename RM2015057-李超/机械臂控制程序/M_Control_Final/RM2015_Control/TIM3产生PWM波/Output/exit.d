@@ -1,0 +1,14 @@
+..\Output\exit.o: exit.c
+..\Output\exit.o: exti.h
+..\Output\exit.o: ..\CMSIS\stm32f10x.h
+..\Output\exit.o: ..\CMSIS\core_cm3.h
+..\Output\exit.o: E:\keil\ARM\ARMCC\bin\..\include\stdint.h
+..\Output\exit.o: ..\CMSIS\system_stm32f10x.h
+..\Output\exit.o: ..\USER\stm32f10x_conf.h
+..\Output\exit.o: ..\FWlib\inc\stm32f10x_flash.h
+..\Output\exit.o: ..\CMSIS\stm32f10x.h
+..\Output\exit.o: ..\FWlib\inc\stm32f10x_gpio.h
+..\Output\exit.o: ..\FWlib\inc\stm32f10x_rcc.h
+..\Output\exit.o: ..\FWlib\inc\stm32f10x_tim.h
+..\Output\exit.o: ..\FWlib\inc\misc.h
+..\Output\exit.o: ..\FWlib\inc\stm32f10x_exti.h

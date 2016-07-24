@@ -1,0 +1,163 @@
+Dependencies for Project 'STM32-DEMO', Target 'TIM3-PWM-DEMO': (DO NOT MODIFY !)
+F (..\CMSIS\startup\startup_stm32f10x_md.s)(0x4E6F65EE)(--cpu Cortex-M3 -g --apcs=interwork -I E:\keil\ARM\RV31\INC -I E:\keil\ARM\CMSIS\Include -I E:\keil\ARM\Inc\ST\STM32F10x --list ".\startup_stm32f10x_md.lst" --xref -o "..\Output\startup_stm32f10x_md.o" --depend "..\Output\startup_stm32f10x_md.d")
+F (.\main.c)(0x55CAEAFA)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\FWlib\inc -I..\USER -I..\CMSIS -I E:\keil\ARM\RV31\INC -I E:\keil\ARM\CMSIS\Include -I E:\keil\ARM\Inc\ST\STM32F10x -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD -o "..\Output\main.o" --omf_browse "..\Output\main.crf" --depend "..\Output\main.d")
+I (..\CMSIS\stm32f10x.h)(0x4E6F65EE)
+I (..\CMSIS\core_cm3.h)(0x4E6F65EE)
+I (E:\keil\ARM\ARMCC\bin\..\include\stdint.h)(0x50F96150)
+I (..\CMSIS\system_stm32f10x.h)(0x4E6F65EE)
+I (..\USER\stm32f10x_conf.h)(0x4E6F65EE)
+I (..\FWlib\inc\stm32f10x_flash.h)(0x4E6F65EE)
+I (..\FWlib\inc\stm32f10x_gpio.h)(0x4E6F65EE)
+I (..\FWlib\inc\stm32f10x_rcc.h)(0x55C615F7)
+I (..\FWlib\inc\stm32f10x_tim.h)(0x4E6F65EE)
+I (pwm_output.h)(0x4E701FA2)
+I (exti.h)(0x55CA0BFD)
+I (..\FWlib\inc\misc.h)(0x4E6F65EE)
+I (..\FWlib\inc\stm32f10x_exti.h)(0x4E6F65EE)
+I (..\FWlib\inc\stm32f10x_usart.h)(0x4E6F65EE)
+F (.\pwm_output.c)(0x55CB06C2)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\FWlib\inc -I..\USER -I..\CMSIS -I E:\keil\ARM\RV31\INC -I E:\keil\ARM\CMSIS\Include -I E:\keil\ARM\Inc\ST\STM32F10x -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD -o "..\Output\pwm_output.o" --omf_browse "..\Output\pwm_output.crf" --depend "..\Output\pwm_output.d")
+I (pwm_output.h)(0x4E701FA2)
+I (..\CMSIS\stm32f10x.h)(0x4E6F65EE)
+I (..\CMSIS\core_cm3.h)(0x4E6F65EE)
+I (E:\keil\ARM\ARMCC\bin\..\include\stdint.h)(0x50F96150)
+I (..\CMSIS\system_stm32f10x.h)(0x4E6F65EE)
+I (..\USER\stm32f10x_conf.h)(0x4E6F65EE)
+I (..\FWlib\inc\stm32f10x_flash.h)(0x4E6F65EE)
+I (..\FWlib\inc\stm32f10x_gpio.h)(0x4E6F65EE)
+I (..\FWlib\inc\stm32f10x_rcc.h)(0x55C615F7)
+I (..\FWlib\inc\stm32f10x_tim.h)(0x4E6F65EE)
+F (.\stm32f10x_it.c)(0x55CC0975)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\FWlib\inc -I..\USER -I..\CMSIS -I E:\keil\ARM\RV31\INC -I E:\keil\ARM\CMSIS\Include -I E:\keil\ARM\Inc\ST\STM32F10x -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD -o "..\Output\stm32f10x_it.o" --omf_browse "..\Output\stm32f10x_it.crf" --depend "..\Output\stm32f10x_it.d")
+I (stm32f10x_it.h)(0x4E6F65EE)
+I (..\CMSIS\stm32f10x.h)(0x4E6F65EE)
+I (..\CMSIS\core_cm3.h)(0x4E6F65EE)
+I (E:\keil\ARM\ARMCC\bin\..\include\stdint.h)(0x50F96150)
+I (..\CMSIS\system_stm32f10x.h)(0x4E6F65EE)
+I (..\USER\stm32f10x_conf.h)(0x4E6F65EE)
+I (..\FWlib\inc\stm32f10x_flash.h)(0x4E6F65EE)
+I (..\FWlib\inc\stm32f10x_gpio.h)(0x4E6F65EE)
+I (..\FWlib\inc\stm32f10x_rcc.h)(0x55C615F7)
+I (..\FWlib\inc\stm32f10x_tim.h)(0x4E6F65EE)
+I (..\FWlib\inc\stm32f10x_usart.h)(0x4E6F65EE)
+I (..\FWlib\inc\stm32f10x_exti.h)(0x4E6F65EE)
+I (SysTick.h)(0x55CA1893)
+F (.\usart2.c)(0x55C9EBE6)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\FWlib\inc -I..\USER -I..\CMSIS -I E:\keil\ARM\RV31\INC -I E:\keil\ARM\CMSIS\Include -I E:\keil\ARM\Inc\ST\STM32F10x -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD -o "..\Output\usart2.o" --omf_browse "..\Output\usart2.crf" --depend "..\Output\usart2.d")
+I (..\FWlib\inc\stm32f10x_gpio.h)(0x4E6F65EE)
+I (..\CMSIS\stm32f10x.h)(0x4E6F65EE)
+I (..\CMSIS\core_cm3.h)(0x4E6F65EE)
+I (E:\keil\ARM\ARMCC\bin\..\include\stdint.h)(0x50F96150)
+I (..\CMSIS\system_stm32f10x.h)(0x4E6F65EE)
+I (..\USER\stm32f10x_conf.h)(0x4E6F65EE)
+I (..\FWlib\inc\stm32f10x_flash.h)(0x4E6F65EE)
+I (..\FWlib\inc\stm32f10x_rcc.h)(0x55C615F7)
+I (..\FWlib\inc\stm32f10x_tim.h)(0x4E6F65EE)
+I (..\FWlib\inc\misc.h)(0x4E6F65EE)
+I (..\FWlib\inc\stm32f10x_usart.h)(0x4E6F65EE)
+F (.\exti.c)(0x55CA160C)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\FWlib\inc -I..\USER -I..\CMSIS -I E:\keil\ARM\RV31\INC -I E:\keil\ARM\CMSIS\Include -I E:\keil\ARM\Inc\ST\STM32F10x -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD -o "..\Output\exti.o" --omf_browse "..\Output\exti.crf" --depend "..\Output\exti.d")
+I (exti.h)(0x55CA0BFD)
+I (..\CMSIS\stm32f10x.h)(0x4E6F65EE)
+I (..\CMSIS\core_cm3.h)(0x4E6F65EE)
+I (E:\keil\ARM\ARMCC\bin\..\include\stdint.h)(0x50F96150)
+I (..\CMSIS\system_stm32f10x.h)(0x4E6F65EE)
+I (..\USER\stm32f10x_conf.h)(0x4E6F65EE)
+I (..\FWlib\inc\stm32f10x_flash.h)(0x4E6F65EE)
+I (..\FWlib\inc\stm32f10x_gpio.h)(0x4E6F65EE)
+I (..\FWlib\inc\stm32f10x_rcc.h)(0x55C615F7)
+I (..\FWlib\inc\stm32f10x_tim.h)(0x4E6F65EE)
+I (..\FWlib\inc\misc.h)(0x4E6F65EE)
+I (..\FWlib\inc\stm32f10x_exti.h)(0x4E6F65EE)
+F (.\SysTick.c)(0x55CA10A8)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\FWlib\inc -I..\USER -I..\CMSIS -I E:\keil\ARM\RV31\INC -I E:\keil\ARM\CMSIS\Include -I E:\keil\ARM\Inc\ST\STM32F10x -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD -o "..\Output\systick.o" --omf_browse "..\Output\systick.crf" --depend "..\Output\systick.d")
+I (SysTick.h)(0x55CA1893)
+I (..\CMSIS\stm32f10x.h)(0x4E6F65EE)
+I (..\CMSIS\core_cm3.h)(0x4E6F65EE)
+I (E:\keil\ARM\ARMCC\bin\..\include\stdint.h)(0x50F96150)
+I (..\CMSIS\system_stm32f10x.h)(0x4E6F65EE)
+I (..\USER\stm32f10x_conf.h)(0x4E6F65EE)
+I (..\FWlib\inc\stm32f10x_flash.h)(0x4E6F65EE)
+I (..\FWlib\inc\stm32f10x_gpio.h)(0x4E6F65EE)
+I (..\FWlib\inc\stm32f10x_rcc.h)(0x55C615F7)
+I (..\FWlib\inc\stm32f10x_tim.h)(0x4E6F65EE)
+F (..\FWlib\src\misc.c)(0x4E6F65EE)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\FWlib\inc -I..\USER -I..\CMSIS -I E:\keil\ARM\RV31\INC -I E:\keil\ARM\CMSIS\Include -I E:\keil\ARM\Inc\ST\STM32F10x -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD -o "..\Output\misc.o" --omf_browse "..\Output\misc.crf" --depend "..\Output\misc.d")
+I (..\FWlib\inc\misc.h)(0x4E6F65EE)
+I (..\CMSIS\stm32f10x.h)(0x4E6F65EE)
+I (..\CMSIS\core_cm3.h)(0x4E6F65EE)
+I (E:\keil\ARM\ARMCC\bin\..\include\stdint.h)(0x50F96150)
+I (..\CMSIS\system_stm32f10x.h)(0x4E6F65EE)
+I (..\USER\stm32f10x_conf.h)(0x4E6F65EE)
+I (..\FWlib\inc\stm32f10x_flash.h)(0x4E6F65EE)
+I (..\FWlib\inc\stm32f10x_gpio.h)(0x4E6F65EE)
+I (..\FWlib\inc\stm32f10x_rcc.h)(0x55C615F7)
+I (..\FWlib\inc\stm32f10x_tim.h)(0x4E6F65EE)
+F (..\FWlib\src\stm32f10x_tim.c)(0x4E6F65EE)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\FWlib\inc -I..\USER -I..\CMSIS -I E:\keil\ARM\RV31\INC -I E:\keil\ARM\CMSIS\Include -I E:\keil\ARM\Inc\ST\STM32F10x -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD -o "..\Output\stm32f10x_tim.o" --omf_browse "..\Output\stm32f10x_tim.crf" --depend "..\Output\stm32f10x_tim.d")
+I (..\FWlib\inc\stm32f10x_tim.h)(0x4E6F65EE)
+I (..\CMSIS\stm32f10x.h)(0x4E6F65EE)
+I (..\CMSIS\core_cm3.h)(0x4E6F65EE)
+I (E:\keil\ARM\ARMCC\bin\..\include\stdint.h)(0x50F96150)
+I (..\CMSIS\system_stm32f10x.h)(0x4E6F65EE)
+I (..\USER\stm32f10x_conf.h)(0x4E6F65EE)
+I (..\FWlib\inc\stm32f10x_flash.h)(0x4E6F65EE)
+I (..\FWlib\inc\stm32f10x_gpio.h)(0x4E6F65EE)
+I (..\FWlib\inc\stm32f10x_rcc.h)(0x55C615F7)
+F (..\FWlib\src\stm32f10x_gpio.c)(0x4E6F65EE)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\FWlib\inc -I..\USER -I..\CMSIS -I E:\keil\ARM\RV31\INC -I E:\keil\ARM\CMSIS\Include -I E:\keil\ARM\Inc\ST\STM32F10x -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD -o "..\Output\stm32f10x_gpio.o" --omf_browse "..\Output\stm32f10x_gpio.crf" --depend "..\Output\stm32f10x_gpio.d")
+I (..\FWlib\inc\stm32f10x_gpio.h)(0x4E6F65EE)
+I (..\CMSIS\stm32f10x.h)(0x4E6F65EE)
+I (..\CMSIS\core_cm3.h)(0x4E6F65EE)
+I (E:\keil\ARM\ARMCC\bin\..\include\stdint.h)(0x50F96150)
+I (..\CMSIS\system_stm32f10x.h)(0x4E6F65EE)
+I (..\USER\stm32f10x_conf.h)(0x4E6F65EE)
+I (..\FWlib\inc\stm32f10x_flash.h)(0x4E6F65EE)
+I (..\FWlib\inc\stm32f10x_rcc.h)(0x55C615F7)
+I (..\FWlib\inc\stm32f10x_tim.h)(0x4E6F65EE)
+F (..\FWlib\src\stm32f10x_rcc.c)(0x4E6F65EE)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\FWlib\inc -I..\USER -I..\CMSIS -I E:\keil\ARM\RV31\INC -I E:\keil\ARM\CMSIS\Include -I E:\keil\ARM\Inc\ST\STM32F10x -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD -o "..\Output\stm32f10x_rcc.o" --omf_browse "..\Output\stm32f10x_rcc.crf" --depend "..\Output\stm32f10x_rcc.d")
+I (..\FWlib\inc\stm32f10x_rcc.h)(0x55C615F7)
+I (..\CMSIS\stm32f10x.h)(0x4E6F65EE)
+I (..\CMSIS\core_cm3.h)(0x4E6F65EE)
+I (E:\keil\ARM\ARMCC\bin\..\include\stdint.h)(0x50F96150)
+I (..\CMSIS\system_stm32f10x.h)(0x4E6F65EE)
+I (..\USER\stm32f10x_conf.h)(0x4E6F65EE)
+I (..\FWlib\inc\stm32f10x_flash.h)(0x4E6F65EE)
+I (..\FWlib\inc\stm32f10x_gpio.h)(0x4E6F65EE)
+I (..\FWlib\inc\stm32f10x_tim.h)(0x4E6F65EE)
+F (..\FWlib\src\stm32f10x_flash.c)(0x4E6F65EE)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\FWlib\inc -I..\USER -I..\CMSIS -I E:\keil\ARM\RV31\INC -I E:\keil\ARM\CMSIS\Include -I E:\keil\ARM\Inc\ST\STM32F10x -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD -o "..\Output\stm32f10x_flash.o" --omf_browse "..\Output\stm32f10x_flash.crf" --depend "..\Output\stm32f10x_flash.d")
+I (..\FWlib\inc\stm32f10x_flash.h)(0x4E6F65EE)
+I (..\CMSIS\stm32f10x.h)(0x4E6F65EE)
+I (..\CMSIS\core_cm3.h)(0x4E6F65EE)
+I (E:\keil\ARM\ARMCC\bin\..\include\stdint.h)(0x50F96150)
+I (..\CMSIS\system_stm32f10x.h)(0x4E6F65EE)
+I (..\USER\stm32f10x_conf.h)(0x4E6F65EE)
+I (..\FWlib\inc\stm32f10x_gpio.h)(0x4E6F65EE)
+I (..\FWlib\inc\stm32f10x_rcc.h)(0x55C615F7)
+I (..\FWlib\inc\stm32f10x_tim.h)(0x4E6F65EE)
+F (..\FWlib\src\stm32f10x_exti.c)(0x4E6F65EE)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\FWlib\inc -I..\USER -I..\CMSIS -I E:\keil\ARM\RV31\INC -I E:\keil\ARM\CMSIS\Include -I E:\keil\ARM\Inc\ST\STM32F10x -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD -o "..\Output\stm32f10x_exti.o" --omf_browse "..\Output\stm32f10x_exti.crf" --depend "..\Output\stm32f10x_exti.d")
+I (..\FWlib\inc\stm32f10x_exti.h)(0x4E6F65EE)
+I (..\CMSIS\stm32f10x.h)(0x4E6F65EE)
+I (..\CMSIS\core_cm3.h)(0x4E6F65EE)
+I (E:\keil\ARM\ARMCC\bin\..\include\stdint.h)(0x50F96150)
+I (..\CMSIS\system_stm32f10x.h)(0x4E6F65EE)
+I (..\USER\stm32f10x_conf.h)(0x4E6F65EE)
+I (..\FWlib\inc\stm32f10x_flash.h)(0x4E6F65EE)
+I (..\FWlib\inc\stm32f10x_gpio.h)(0x4E6F65EE)
+I (..\FWlib\inc\stm32f10x_rcc.h)(0x55C615F7)
+I (..\FWlib\inc\stm32f10x_tim.h)(0x4E6F65EE)
+F (..\FWlib\src\stm32f10x_usart.c)(0x4E6F65EE)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\FWlib\inc -I..\USER -I..\CMSIS -I E:\keil\ARM\RV31\INC -I E:\keil\ARM\CMSIS\Include -I E:\keil\ARM\Inc\ST\STM32F10x -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD -o "..\Output\stm32f10x_usart.o" --omf_browse "..\Output\stm32f10x_usart.crf" --depend "..\Output\stm32f10x_usart.d")
+I (..\FWlib\inc\stm32f10x_usart.h)(0x4E6F65EE)
+I (..\CMSIS\stm32f10x.h)(0x4E6F65EE)
+I (..\CMSIS\core_cm3.h)(0x4E6F65EE)
+I (E:\keil\ARM\ARMCC\bin\..\include\stdint.h)(0x50F96150)
+I (..\CMSIS\system_stm32f10x.h)(0x4E6F65EE)
+I (..\USER\stm32f10x_conf.h)(0x4E6F65EE)
+I (..\FWlib\inc\stm32f10x_flash.h)(0x4E6F65EE)
+I (..\FWlib\inc\stm32f10x_gpio.h)(0x4E6F65EE)
+I (..\FWlib\inc\stm32f10x_rcc.h)(0x55C615F7)
+I (..\FWlib\inc\stm32f10x_tim.h)(0x4E6F65EE)
+F (..\CMSIS\core_cm3.c)(0x4E6F65EE)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\FWlib\inc -I..\USER -I..\CMSIS -I E:\keil\ARM\RV31\INC -I E:\keil\ARM\CMSIS\Include -I E:\keil\ARM\Inc\ST\STM32F10x -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD -o "..\Output\core_cm3.o" --omf_browse "..\Output\core_cm3.crf" --depend "..\Output\core_cm3.d")
+I (E:\keil\ARM\ARMCC\bin\..\include\stdint.h)(0x50F96150)
+F (..\CMSIS\system_stm32f10x.c)(0x4E6F65EE)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\FWlib\inc -I..\USER -I..\CMSIS -I E:\keil\ARM\RV31\INC -I E:\keil\ARM\CMSIS\Include -I E:\keil\ARM\Inc\ST\STM32F10x -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD -o "..\Output\system_stm32f10x.o" --omf_browse "..\Output\system_stm32f10x.crf" --depend "..\Output\system_stm32f10x.d")
+I (..\CMSIS\stm32f10x.h)(0x4E6F65EE)
+I (..\CMSIS\core_cm3.h)(0x4E6F65EE)
+I (E:\keil\ARM\ARMCC\bin\..\include\stdint.h)(0x50F96150)
+I (..\CMSIS\system_stm32f10x.h)(0x4E6F65EE)
+I (..\USER\stm32f10x_conf.h)(0x4E6F65EE)
+I (..\FWlib\inc\stm32f10x_flash.h)(0x4E6F65EE)
+I (..\FWlib\inc\stm32f10x_gpio.h)(0x4E6F65EE)
+I (..\FWlib\inc\stm32f10x_rcc.h)(0x55C615F7)
+I (..\FWlib\inc\stm32f10x_tim.h)(0x4E6F65EE)

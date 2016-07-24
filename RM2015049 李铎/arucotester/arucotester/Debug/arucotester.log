@@ -1,0 +1,461 @@
+﻿生成启动时间为 2015/8/2 17:18:12。
+     1>项目“D:\opencvworkspace\arucotester\arucotester\arucotester.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt aruco\arucofidmarkers.cpp aruco\ar_omp.cpp aruco\board.cpp aruco\boarddetector.cpp aruco\cameraparameters.cpp aruco\chromaticmask.cpp aruco\cvdrawingutils.cpp aruco\highlyreliablemarkers.cpp aruco\marker.cpp aruco\markerdetector.cpp aruco\subpixelcorner.cpp
+         subpixelcorner.cpp
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\subpixelcorner.cpp(79): warning C4018: “<”: 有符号/无符号不匹配
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\subpixelcorner.cpp(165): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\subpixelcorner.cpp(166): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+         markerdetector.cpp
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.h(55): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.h(61): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.h(76): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.h(79): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.h(83): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.h(87): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.h(105): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.h(118): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.h(128): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.h(129): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\marker.h(75): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\marker.h(82): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\marker.h(87): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\marker.h(99): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.h(86): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.h(98): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.h(175): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.h(210): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.h(252): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.h(270): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.h(295): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.h(298): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\board.h(86): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\board.h(97): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\board.h(100): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\board.h(112): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\board.h(120): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\board.h(123): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\board.h(146): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\board.h(158): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\board.h(163): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\board.h(166): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\arucofidmarkers.h(67): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\arucofidmarkers.h(78): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\arucofidmarkers.h(89): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\arucofidmarkers.h(100): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\arucofidmarkers.h(111): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\arucofidmarkers.h(114): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.cpp(60): warning C4305: “=”: 从“double”到“float”截断
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.cpp(63): warning C4305: “=”: 从“double”到“float”截断
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.cpp(109): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.cpp(129): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.cpp(136): warning C4244: “初始化”: 从“int64”转换到“double”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.cpp(148): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.cpp(158): warning C4244: “初始化”: 从“int64”转换到“double”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.cpp(163): warning C4244: “初始化”: 从“int64”转换到“double”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.cpp(169): warning C4018: “<”: 有符号/无符号不匹配
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.cpp(194): warning C4244: “初始化”: 从“int64”转换到“double”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.cpp(207): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.cpp(212): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.cpp(220): warning C4244: “初始化”: 从“int64”转换到“double”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.cpp(239): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.cpp(240): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.cpp(260): warning C4244: “初始化”: 从“int64”转换到“double”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.cpp(291): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.cpp(292): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.cpp(311): warning C4018: “<”: 有符号/无符号不匹配
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.cpp(341): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.cpp(437): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.cpp(457): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.cpp(479): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.cpp(488): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.cpp(489): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.cpp(490): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.cpp(502): warning C4244: “=”: 从“const float”转换到“int”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.cpp(503): warning C4244: “=”: 从“const float”转换到“int”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.cpp(532): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.cpp(535): warning C4018: “<”: 有符号/无符号不匹配
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.cpp(549): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.cpp(551): warning C4018: “<”: 有符号/无符号不匹配
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.cpp(571): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.cpp(575): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.cpp(594): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.cpp(663): warning C4244: “+=”: 从“double”转换到“int”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.cpp(665): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.cpp(666): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.cpp(667): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.cpp(685): warning C4244: “初始化”: 从“int”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.cpp(686): warning C4244: “初始化”: 从“int”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.cpp(687): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.cpp(689): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.cpp(690): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.cpp(759): warning C4244: “+=”: 从“float”转换到“int”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.cpp(809): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.cpp(877): warning C4018: “<”: 有符号/无符号不匹配
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.cpp(890): warning C4018: “<”: 有符号/无符号不匹配
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.cpp(1017): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.cpp(1030): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.cpp(1048): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.cpp(1061): warning C4244: “参数”: 从“const int”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.cpp(1062): warning C4244: “参数”: 从“const int”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.cpp(1064): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.cpp(1075): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.cpp(1081): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.cpp(1084): warning C4018: “<”: 有符号/无符号不匹配
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.cpp(1087): warning C4018: “<”: 有符号/无符号不匹配
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.cpp(1089): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.cpp(1092): warning C4244: “参数”: 从“size_t”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.cpp(1096): warning C4258: “i”: 忽略 For 循环中的定义；使用封闭范围中的定义
+                 d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.cpp(1084) : 忽略“i”的定义
+                 d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.cpp(1060) : 使用“i”的定义
+         marker.cpp
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.h(55): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.h(61): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.h(76): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.h(79): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.h(83): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.h(87): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.h(105): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.h(118): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.h(128): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.h(129): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\marker.h(75): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\marker.h(82): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\marker.h(87): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\marker.h(99): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\marker.cpp(73): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\marker.cpp(128): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\marker.cpp(227): error C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(356) : 参见“sprintf”的声明
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\marker.cpp(231): warning C4244: “+=”: 从“const float”转换到“int”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\marker.cpp(232): warning C4244: “+=”: 从“const float”转换到“int”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\marker.cpp(234): warning C4244: “/=”: 从“double”转换到“int”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\marker.cpp(235): warning C4244: “/=”: 从“double”转换到“int”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\marker.cpp(242): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\marker.cpp(252): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\marker.cpp(262): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\marker.cpp(263): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\marker.cpp(265): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\marker.cpp(266): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\marker.cpp(268): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\marker.cpp(269): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\marker.cpp(271): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\marker.cpp(272): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\marker.cpp(303): warning C4305: “初始化”: 从“double”到“float”截断
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\marker.cpp(340): warning C4244: “return”: 从“double”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\marker.cpp(348): warning C4244: “+=”: 从“double”转换到“float”，可能丢失数据
+         highlyreliablemarkers.cpp
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\highlyreliablemarkers.cpp(284): warning C4244: “=”: 从“float”转换到“unsigned int”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\highlyreliablemarkers.cpp(353): warning C4018: “<”: 有符号/无符号不匹配
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\highlyreliablemarkers.cpp(357): warning C4018: “<”: 有符号/无符号不匹配
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\highlyreliablemarkers.cpp(374): warning C4018: “<”: 有符号/无符号不匹配
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\highlyreliablemarkers.cpp(375): warning C4018: “<”: 有符号/无符号不匹配
+         cvdrawingutils.cpp
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.h(55): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.h(61): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.h(76): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.h(79): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.h(83): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.h(87): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.h(105): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.h(118): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.h(128): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.h(129): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\marker.h(75): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\marker.h(82): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\marker.h(87): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\marker.h(99): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.h(86): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.h(98): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.h(175): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.h(210): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.h(252): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.h(270): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.h(295): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.h(298): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\board.h(86): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\board.h(97): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\board.h(100): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\board.h(112): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\board.h(120): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\board.h(123): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\board.h(146): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\board.h(158): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\board.h(163): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\board.h(166): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\boarddetector.h(81): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\boarddetector.h(107): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\boarddetector.h(109): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cvdrawingutils.cpp(78): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cvdrawingutils.cpp(80): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cvdrawingutils.cpp(81): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cvdrawingutils.cpp(83): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cvdrawingutils.cpp(84): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cvdrawingutils.cpp(86): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cvdrawingutils.cpp(87): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cvdrawingutils.cpp(89): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cvdrawingutils.cpp(91): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cvdrawingutils.cpp(93): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cvdrawingutils.cpp(94): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cvdrawingutils.cpp(96): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cvdrawingutils.cpp(97): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cvdrawingutils.cpp(99): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cvdrawingutils.cpp(100): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cvdrawingutils.cpp(102): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cvdrawingutils.cpp(104): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cvdrawingutils.cpp(105): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cvdrawingutils.cpp(107): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cvdrawingutils.cpp(108): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cvdrawingutils.cpp(110): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cvdrawingutils.cpp(111): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cvdrawingutils.cpp(113): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cvdrawingutils.cpp(114): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cvdrawingutils.cpp(117): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cvdrawingutils.cpp(118): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cvdrawingutils.cpp(120): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cvdrawingutils.cpp(121): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cvdrawingutils.cpp(123): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cvdrawingutils.cpp(124): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cvdrawingutils.cpp(126): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cvdrawingutils.cpp(127): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+         chromaticmask.cpp
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.h(55): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.h(61): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.h(76): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.h(79): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.h(83): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.h(87): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.h(105): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.h(118): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.h(128): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.h(129): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\marker.h(75): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\marker.h(82): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\marker.h(87): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\marker.h(99): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\board.h(86): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\board.h(97): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\board.h(100): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\board.h(112): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\board.h(120): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\board.h(123): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\board.h(146): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\board.h(158): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\board.h(163): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\board.h(166): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.h(86): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.h(98): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.h(175): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.h(210): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.h(252): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.h(270): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.h(295): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.h(298): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\boarddetector.h(81): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\boarddetector.h(107): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\boarddetector.h(109): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\chromaticmask.h(95): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\chromaticmask.cpp(136): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\chromaticmask.cpp(151): warning C4244: “*=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\chromaticmask.cpp(152): warning C4244: “*=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\chromaticmask.cpp(153): warning C4244: “*=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\chromaticmask.cpp(154): warning C4244: “*=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\chromaticmask.cpp(183): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\chromaticmask.cpp(204): warning C4018: “<”: 有符号/无符号不匹配
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\chromaticmask.cpp(205): warning C4018: “<”: 有符号/无符号不匹配
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\chromaticmask.cpp(206): warning C4244: “参数”: 从“unsigned int”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\chromaticmask.cpp(215): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\chromaticmask.cpp(216): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\chromaticmask.cpp(257): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\chromaticmask.cpp(258): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\chromaticmask.cpp(259): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\chromaticmask.cpp(260): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\chromaticmask.cpp(263): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\chromaticmask.cpp(264): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\chromaticmask.cpp(265): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\chromaticmask.cpp(266): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\chromaticmask.cpp(281): warning C4018: “<”: 有符号/无符号不匹配
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\chromaticmask.cpp(282): warning C4018: “<”: 有符号/无符号不匹配
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\chromaticmask.cpp(328): warning C4018: “<”: 有符号/无符号不匹配
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\chromaticmask.cpp(331): warning C4018: “<”: 有符号/无符号不匹配
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\chromaticmask.cpp(390): warning C4244: “参数”: 从“unsigned int”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\chromaticmask.cpp(391): warning C4244: “参数”: 从“unsigned int”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\chromaticmask.cpp(392): warning C4244: “参数”: 从“unsigned int”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\chromaticmask.cpp(405): warning C4018: “<”: 有符号/无符号不匹配
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\chromaticmask.cpp(409): warning C4018: “<”: 有符号/无符号不匹配
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\chromaticmask.cpp(411): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\chromaticmask.cpp(417): warning C4018: “>”: 有符号/无符号不匹配
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\chromaticmask.cpp(428): warning C4244: “+=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\chromaticmask.cpp(452): warning C4018: “<”: 有符号/无符号不匹配
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\chromaticmask.cpp(455): warning C4018: “<”: 有符号/无符号不匹配
+         cameraparameters.cpp
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.h(55): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.h(61): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.h(76): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.h(79): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.h(83): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.h(87): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.h(105): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.h(118): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.h(128): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.h(129): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.cpp(47): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.cpp(68): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.cpp(106): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.cpp(138): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.cpp(140): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.cpp(146): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.cpp(175): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.cpp(196): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.cpp(236): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.cpp(273): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.cpp(331): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.cpp(397): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+         boarddetector.cpp
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.h(55): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.h(61): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.h(76): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.h(79): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.h(83): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.h(87): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.h(105): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.h(118): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.h(128): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.h(129): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\marker.h(75): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\marker.h(82): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\marker.h(87): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\marker.h(99): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\board.h(86): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\board.h(97): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\board.h(100): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\board.h(112): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\board.h(120): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\board.h(123): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\board.h(146): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\board.h(158): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\board.h(163): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\board.h(166): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.h(86): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.h(98): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.h(175): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.h(210): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.h(252): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.h(270): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.h(295): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\markerdetector.h(298): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\boarddetector.h(81): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\boarddetector.h(107): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\boarddetector.h(109): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\boarddetector.cpp(68): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\boarddetector.cpp(84): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\boarddetector.cpp(92): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\boarddetector.cpp(102): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\boarddetector.cpp(183): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\boarddetector.cpp(209): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\boarddetector.cpp(218): warning C4305: “初始化”: 从“double”到“float”截断
+         board.cpp
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.h(55): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.h(61): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.h(76): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.h(79): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.h(83): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.h(87): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.h(105): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.h(118): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.h(128): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.h(129): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\marker.h(75): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\marker.h(82): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\marker.h(87): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\marker.h(99): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\board.h(86): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\board.h(97): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\board.h(100): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\board.h(112): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\board.h(120): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\board.h(123): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\board.h(146): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\board.h(158): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\board.h(163): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\board.h(166): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\board.cpp(44): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\board.cpp(71): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\board.cpp(78): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\board.cpp(89): warning C4018: “<”: 有符号/无符号不匹配
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\board.cpp(101): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\board.cpp(113): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\board.cpp(149): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\board.cpp(159): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\board.cpp(213): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\board.cpp(307): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\board.cpp(321): warning C4018: “<”: 有符号/无符号不匹配
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\board.cpp(336): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+         ar_omp.cpp
+         arucofidmarkers.cpp
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.h(55): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.h(61): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.h(76): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.h(79): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.h(83): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.h(87): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.h(105): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.h(118): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.h(128): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\cameraparameters.h(129): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\marker.h(75): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\marker.h(82): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\marker.h(87): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\marker.h(99): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\board.h(86): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\board.h(97): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\board.h(100): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\board.h(112): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\board.h(120): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\board.h(123): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\board.h(146): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\board.h(158): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\board.h(163): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\board.h(166): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\arucofidmarkers.h(67): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\arucofidmarkers.h(78): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\arucofidmarkers.h(89): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\arucofidmarkers.h(100): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\arucofidmarkers.h(111): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\arucofidmarkers.h(114): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\arucofidmarkers.cpp(45): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\arucofidmarkers.cpp(69): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\arucofidmarkers.cpp(77): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\arucofidmarkers.cpp(104): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\arucofidmarkers.cpp(132): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\arucofidmarkers.cpp(136): warning C4244: “参数”: 从“int64”转换到“unsigned int”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\arucofidmarkers.cpp(160): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\arucofidmarkers.cpp(161): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\arucofidmarkers.cpp(162): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\arucofidmarkers.cpp(163): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\arucofidmarkers.cpp(165): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\arucofidmarkers.cpp(179): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\arucofidmarkers.cpp(182): warning C4244: “参数”: 从“int64”转换到“unsigned int”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\arucofidmarkers.cpp(209): warning C4018: “>=”: 有符号/无符号不匹配
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\arucofidmarkers.cpp(217): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\arucofidmarkers.cpp(218): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\arucofidmarkers.cpp(219): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\arucofidmarkers.cpp(220): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\arucofidmarkers.cpp(223): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\arucofidmarkers.cpp(242): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\arucofidmarkers.cpp(246): warning C4244: “参数”: 从“int64”转换到“unsigned int”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\arucofidmarkers.cpp(270): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\arucofidmarkers.cpp(271): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\arucofidmarkers.cpp(272): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\arucofidmarkers.cpp(273): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\arucofidmarkers.cpp(276): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\arucofidmarkers.cpp(313): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\arucofidmarkers.cpp(427): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\arucofidmarkers.cpp(475): warning C4290: 忽略 C++ 异常规范，但指示函数不是 __declspec(nothrow)
+     1>d:\opencvworkspace\arucotester\arucotester\aruco\arucofidmarkers.cpp(494): warning C4018: “<”: 有符号/无符号不匹配
+         正在生成代码...
+     1>已完成生成项目“D:\opencvworkspace\arucotester\arucotester\arucotester.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:09.52

@@ -1,0 +1,619 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.7	//
+ACK_Callback_Func	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.h	/^typedef void (*ACK_Callback_Func)(ProHeader *pHeader);$/;"	t
+ACK_MAX_SIZE	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.h	15;"	d
+ACK_SESSION_IDLE	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.h	19;"	d
+ACK_SESSION_PROCESS	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.h	20;"	d
+ACK_SESSION_USING	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.h	21;"	d
+API_CMD_REQUEST	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	25;"	d
+API_CMD_STATUS_REQUEST	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	26;"	d
+API_CTRL_GIMBAL_SPEED	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	36;"	d
+API_CTRL_REQUEST	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	27;"	d
+API_INFO_QUERY	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	41;"	d
+API_MISSION_HP_CMD	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	34;"	d
+API_MISSION_HP_START	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	33;"	d
+API_MISSION_WP_CMD	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	31;"	d
+API_MISSION_WP_DATA	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	30;"	d
+API_MISSION_WP_INFO	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	29;"	d
+API_OPEN_SERIAL	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	24;"	d
+API_SIM_ECHO	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	42;"	d
+API_USER_ACTIVATION	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	40;"	d
+API_VERSION_QUERY	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	39;"	d
+Ack_Global_Memory	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.cpp	/^static unsigned char Ack_Global_Memory[(SESSION_AND_MEM_COUNT + 1) * PKG_MAX_SIZE];$/;"	v	file:
+Ack_MMU_Tab	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.cpp	/^static Memory_Manage_Unit Ack_MMU_Tab[SESSION_AND_MEM_COUNT + 1];$/;"	v	file:
+Ack_Session_Queue	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.h	/^typedef struct Ack_Session_Queue$/;"	s
+Ack_Session_Queue	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.h	/^}Ack_Session_Queue;$/;"	t	typeref:struct:Ack_Session_Queue
+Ack_Session_Tab	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.cpp	/^static Ack_Session_Queue Ack_Session_Tab[SESSION_AND_MEM_COUNT + 1];$/;"	v	file:
+Act_Hei	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Test.cpp	/^float Act_Hei;$/;"	v
+Activation_Alrm	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Test.cpp	/^void Activation_Alrm(int sig)$/;"	f
+ActualSpeed	.\SDK_Zeus\control\sdk_lib\DJI_Control.h	/^    float ActualSpeed;$/;"	m	struct:Speed_PID
+App_Complex_Send_Cmd	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.cpp	/^void App_Complex_Send_Cmd(unsigned char cmd, cmd_ack_callback ack_callback)$/;"	f
+App_Recv_Req_Data	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.cpp	/^void App_Recv_Req_Data(ProHeader *header)$/;"	f
+App_Recv_Set_Hook	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.cpp	/^void App_Recv_Set_Hook(Req_Callback_Func p_hook)$/;"	f
+App_Send_Ack	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.cpp	/^void App_Send_Ack(req_id_t req_id, unsigned char *ack, int len)$/;"	f
+App_Send_Data	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.cpp	/^void App_Send_Data(unsigned char flag, unsigned char is_enc, unsigned char  cmd_set, unsigned char cmd_id,unsigned char *pdata,int len,ACK_Callback_Func ack_callback, int timeout ,int n)$/;"	f
+App_Set_Table	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.cpp	/^void App_Set_Table(set_handler_table_t* set_tab,cmd_handler_table_t* cmd_tab)$/;"	f
+BACK_TO_TABLES	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.cpp	44;"	d	file:
+CMD_RECIEVE	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	183;"	d
+CONTROL_ZEUS	.\SDK_Zeus\control\sdk_lib\DJI_Control.h	2;"	d
+CRC_INIT	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.cpp	/^const unsigned short CRC_INIT = 0x3AA3;$/;"	v
+C_EARTH	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Test.cpp	33;"	d	file:
+C_PI	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Test.cpp	34;"	d	file:
+CmdRecvThread	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.cpp	/^static void * CmdRecvThread(void * arg)$/;"	f	file:
+CmdStartThread	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.cpp	/^int CmdStartThread(void)$/;"	f
+Control_Cmd_Send	.\SDK_Zeus\control\sdk_lib\DJI_Control.cpp	/^static int Control_Cmd_Send(void)$/;"	f	file:
+Control_Thread_Function	.\SDK_Zeus\control\sdk_lib\DJI_Control.cpp	/^static void * Control_Thread_Function(void * arg)$/;"	f	file:
+DATA_MAX_SIZE	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	159;"	d
+DJI_IMAG_DECT_H	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.h	2;"	d
+DJI_Imag_Dect	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.cpp	/^    DJI_Imag_Dect():\/\/初始化默认设置$/;"	f	class:DJI_Imag_Dect
+DJI_Imag_Dect	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.cpp	/^class DJI_Imag_Dect$/;"	c	file:
+DJI_Onboard_API_Activation	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Test.cpp	/^void DJI_Onboard_API_Activation(void)$/;"	f
+DJI_Onboard_API_Control	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Test.cpp	/^void DJI_Onboard_API_Control(unsigned char arg)$/;"	f
+DJI_Onboard_API_Simple_Task	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Test.cpp	/^void DJI_Onboard_API_Simple_Task(int data)$/;"	f
+DJI_Onboard_API_Status_Query	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Test.cpp	/^void DJI_Onboard_API_Status_Query(void)$/;"	f
+DJI_Onboard_API_UAV_Control	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Test.cpp	/^void DJI_Onboard_API_UAV_Control(unsigned char arg)$/;"	f
+DJI_PRO_LINK_H_	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.h	9;"	d
+DJI_PRO_TEST_H_	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Test.h	9;"	d
+DJI_Pro_Test_Setup	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Test.cpp	/^int DJI_Pro_Test_Setup(void)$/;"	f
+DJI_SDK_PRO_VER	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.h	11;"	d
+ENABLE_MSG_A	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	55;"	d
+ENABLE_MSG_BATTERY	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	63;"	d
+ENABLE_MSG_DEVICE	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	64;"	d
+ENABLE_MSG_GIMBAL	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	61;"	d
+ENABLE_MSG_MAG	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	59;"	d
+ENABLE_MSG_POS	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	58;"	d
+ENABLE_MSG_Q	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	54;"	d
+ENABLE_MSG_RC	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	60;"	d
+ENABLE_MSG_STATUS	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	62;"	d
+ENABLE_MSG_TIME	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	53;"	d
+ENABLE_MSG_V	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	56;"	d
+ENABLE_MSG_W	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	57;"	d
+ERR_INDEX	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	160;"	d
+EXC_DATA_SIZE	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	161;"	d
+EXPOSURE_CONTROL	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.h	15;"	d
+F	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.cpp	41;"	d	file:
+FD	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.cpp	42;"	d	file:
+Free_Send_MMU	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.cpp	/^void Free_Send_MMU(Memory_Manage_Unit *mmu)$/;"	f
+Free_Send_Session	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.cpp	/^void Free_Send_Session(Session_Queue * session)$/;"	f
+Get_Time	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Test.cpp	/^unsigned int Get_Time(void)$/;"	f
+Get_TimeStamp	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.cpp	/^unsigned int Get_TimeStamp(void)$/;"	f
+Height_PID	.\SDK_Zeus\control\sdk_lib\DJI_Control.h	/^struct Height_PID$/;"	s
+Height_PIDinit	.\SDK_Zeus\control\sdk_lib\DJI_Control.cpp	/^void  Height_PIDinit()$/;"	f
+Height_Set	.\SDK_Zeus\control\main.cpp	/^float R_kp,R_kd,T_kp,T_kd,x,Height_Set;$/;"	v
+Imag_Dect	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.cpp	/^static void * Imag_Dect(void * arg){$/;"	f	file:
+Imag_Dect_1	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.cpp	/^static void * Imag_Dect_1(void * arg){$/;"	f	file:
+Imag_Dect_2	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.cpp	/^static void * Imag_Dect_2(void * arg){$/;"	f	file:
+Imag_Dect_Function	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.cpp	/^ void Imag_Dect_Function( Mat srcimage){\/\/修改为inline 函数？？？？？？$/;"	f
+Imag_Dect_Set	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.cpp	/^static void * Imag_Dect_Set(void * arg){$/;"	f	file:
+Imag_Dect_Square_Function	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.cpp	/^void  Imag_Dect_Square_Function(int color,Mat srcimage){$/;"	f
+Image	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.cpp	/^DJI_Imag_Dect Image;$/;"	v
+Image_Dect_Ball	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.cpp	/^ void Image_Dect_Ball(Mat srcimage)$/;"	f
+Kd	.\SDK_Zeus\control\sdk_lib\DJI_Control.h	/^    float Kp,Ki,Kd;$/;"	m	struct:Height_PID
+Kd	.\SDK_Zeus\control\sdk_lib\DJI_Control.h	/^    float Kp,Ki,Kd;$/;"	m	struct:Rho_PID
+Kd	.\SDK_Zeus\control\sdk_lib\DJI_Control.h	/^    float Kp,Ki,Kd;$/;"	m	struct:Speed_PID
+Kd	.\SDK_Zeus\control\sdk_lib\DJI_Control.h	/^    float Kp,Ki,Kd;$/;"	m	struct:Theta_PID
+Ki	.\SDK_Zeus\control\sdk_lib\DJI_Control.h	/^    float Kp,Ki,Kd;$/;"	m	struct:Height_PID
+Ki	.\SDK_Zeus\control\sdk_lib\DJI_Control.h	/^    float Kp,Ki,Kd;$/;"	m	struct:Rho_PID
+Ki	.\SDK_Zeus\control\sdk_lib\DJI_Control.h	/^    float Kp,Ki,Kd;$/;"	m	struct:Speed_PID
+Ki	.\SDK_Zeus\control\sdk_lib\DJI_Control.h	/^    float Kp,Ki,Kd;$/;"	m	struct:Theta_PID
+Kp	.\SDK_Zeus\control\sdk_lib\DJI_Control.h	/^    float Kp,Ki,Kd;$/;"	m	struct:Height_PID
+Kp	.\SDK_Zeus\control\sdk_lib\DJI_Control.h	/^    float Kp,Ki,Kd;$/;"	m	struct:Rho_PID
+Kp	.\SDK_Zeus\control\sdk_lib\DJI_Control.h	/^    float Kp,Ki,Kd;$/;"	m	struct:Speed_PID
+Kp	.\SDK_Zeus\control\sdk_lib\DJI_Control.h	/^    float Kp,Ki,Kd;$/;"	m	struct:Theta_PID
+MSG_ENABLE_FLAG_LEN	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	51;"	d
+MY_ACTIVATION_SET	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	20;"	d
+MY_CTRL_CMD_SET	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	21;"	d
+MY_DEV_ID	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	18;"	d
+Memory_Manage_Unit	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.h	/^typedef struct Memory_Manage_Unit$/;"	s
+Memory_Manage_Unit	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.h	/^}Memory_Manage_Unit;$/;"	t	typeref:struct:Memory_Manage_Unit
+NO_AUTHORITY	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Test.cpp	36;"	d	file:
+PID_Height_Adj	.\SDK_Zeus\control\sdk_lib\DJI_Control.cpp	/^float PID_Height_Adj(float Height_Set,float Height_Actual)$/;"	f
+PID_Rho_Adj	.\SDK_Zeus\control\sdk_lib\DJI_Control.cpp	/^float PID_Rho_Adj(float rho)$/;"	f
+PID_Theta_Adj	.\SDK_Zeus\control\sdk_lib\DJI_Control.cpp	/^float PID_Theta_Adj(float theta)$/;"	f
+PKG_MAX_SIZE	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.h	13;"	d
+POLL_TICK	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.h	23;"	d
+PRO_ACK_MAX_SIZE	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.h	14;"	d
+PRO_DATA_MAX_SIZE	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.h	12;"	d
+PollThread	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.cpp	/^static void * PollThread(void * arg)$/;"	f	file:
+ProAckParameter	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.h	/^typedef struct ProAckParameter$/;"	s
+ProAckParameter	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.h	/^}ProAckParameter;$/;"	t	typeref:struct:ProAckParameter
+ProHeader	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.h	/^typedef struct ProHeader$/;"	s
+ProHeader	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.h	/^}ProHeader;$/;"	t	typeref:struct:ProHeader
+ProSendParameter	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.h	/^typedef struct ProSendParameter$/;"	s
+ProSendParameter	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.h	/^}ProSendParameter;$/;"	t	typeref:struct:ProSendParameter
+Pro_API_Activation	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Test.cpp	/^void Pro_API_Activation(void)$/;"	f
+Pro_Ack_Interface	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.cpp	/^int Pro_Ack_Interface(ProAckParameter *parameter)$/;"	f
+Pro_Config_Comm_Encrypt_Key	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.cpp	/^void Pro_Config_Comm_Encrypt_Key(const char *key)$/;"	f
+Pro_Encode_ACK	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.cpp	/^static unsigned char Pro_Encode_ACK[10];$/;"	v	file:
+Pro_Encode_Data	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.cpp	/^static unsigned char Pro_Encode_Data[1024];$/;"	v	file:
+Pro_Hw_Recv	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Hw.cpp	/^int Pro_Hw_Recv(unsigned char *buf, int len)$/;"	f
+Pro_Hw_Send	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Hw.cpp	/^int Pro_Hw_Send(unsigned char *buf, int len)$/;"	f
+Pro_Hw_Setup	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Hw.cpp	/^int Pro_Hw_Setup(const char *device,int baudrate)$/;"	f
+Pro_Link_Recv_Hook	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.cpp	/^void Pro_Link_Recv_Hook(ProHeader *header)$/;"	f
+Pro_Link_Setup	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.cpp	/^void Pro_Link_Setup(void)$/;"	f
+Pro_Request_Interface	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.cpp	/^void Pro_Request_Interface(ProHeader *header)$/;"	f
+Pro_Send_Interface	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.cpp	/^int Pro_Send_Interface(ProSendParameter *parameter)$/;"	f
+RC	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Test.cpp	/^float RC[5];$/;"	v
+REQ_REFUSE	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	182;"	d
+REQ_TIME_OUT	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	181;"	d
+R_kd	.\SDK_Zeus\control\main.cpp	/^float R_kp,R_kd,T_kp,T_kd,x,Height_Set;$/;"	v
+R_kp	.\SDK_Zeus\control\main.cpp	/^float R_kp,R_kd,T_kp,T_kd,x,Height_Set;$/;"	v
+Rate_YAW_out	.\SDK_Zeus\control\main.cpp	/^float SpeedZ_out,Rate_YAW_out,SpeedY_out;$/;"	v
+Req_Callback_Func	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.h	/^typedef void (*Req_Callback_Func)(ProHeader *pHeader);$/;"	t
+Request_Ack_MMU	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.cpp	/^Memory_Manage_Unit *Request_Ack_MMU(unsigned short size)$/;"	f
+Request_Send_MMU	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.cpp	/^Memory_Manage_Unit *Request_Send_MMU(unsigned short size)$/;"	f
+Request_Send_Session	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.cpp	/^Session_Queue * Request_Send_Session(unsigned short size)$/;"	f
+Rho	.\SDK_Zeus\control\main.cpp	/^Rho_PID Rho;$/;"	v
+Rho_Actual	.\SDK_Zeus\control\main.cpp	/^float Rho_Actual;$/;"	v
+Rho_PID	.\SDK_Zeus\control\sdk_lib\DJI_Control.h	/^struct Rho_PID$/;"	s
+Rho_PIDinit	.\SDK_Zeus\control\sdk_lib\DJI_Control.cpp	/^void Rho_PIDinit()$/;"	f
+SDKFilter	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.h	/^} SDKFilter;$/;"	t	typeref:struct:__anon4
+SDKHeader	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.h	/^} SDKHeader;$/;"	t	typeref:struct:__anon3
+SDK_ERR_COMMAND_NOT_SUPPORTED	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	212;"	d
+SDK_ERR_NO_AUTHORIZED	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	213;"	d
+SDK_ERR_NO_RIGHTS	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	214;"	d
+SDK_ERR_SUCCESS	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	211;"	d
+SESSION_AND_MEM_COUNT	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.h	17;"	d
+SET_CMD_SIZE	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	162;"	d
+STATUS_CMD_EXECUTING	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	184;"	d
+STATUS_CMD_EXE_FAIL	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	185;"	d
+STATUS_CMD_EXE_SUCCESS	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	186;"	d
+Search_Ack_Session	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.cpp	/^Ack_Session_Queue * Search_Ack_Session(unsigned char session_id)$/;"	f
+Send_Global_Common_Memory	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.cpp	/^static unsigned char Send_Global_Common_Memory[PKG_MAX_SIZE];$/;"	v	file:
+Send_Global_Memory	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.cpp	/^static unsigned char Send_Global_Memory[SESSION_AND_MEM_COUNT * PKG_MAX_SIZE];$/;"	v	file:
+Send_MMU_Tab	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.cpp	/^static Memory_Manage_Unit Send_MMU_Tab[SESSION_AND_MEM_COUNT];$/;"	v	file:
+Send_Poll	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.cpp	/^static void Send_Poll(void)$/;"	f	file:
+Send_Pro_Data	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.cpp	/^static void Send_Pro_Data(unsigned char *buf)$/;"	f	file:
+Send_Session_Common_Tab	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.cpp	/^static Session_Queue Send_Session_Common_Tab;$/;"	v	file:
+Send_Session_Tab	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.cpp	/^static Session_Queue Send_Session_Tab[SESSION_AND_MEM_COUNT];$/;"	v	file:
+SerialClose	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Hw.cpp	/^int SerialClose()$/;"	f
+SerialConfig	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Hw.cpp	/^int SerialConfig(int baudrate,char data_bits,char parity_bits,char stop_bits)$/;"	f
+SerialFlush	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Hw.cpp	/^int SerialFlush()$/;"	f
+SerialOpen	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Hw.cpp	/^int SerialOpen(const char *port_str)$/;"	f
+SerialRead	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Hw.cpp	/^static int SerialRead(unsigned char *buf,int len)$/;"	f	file:
+SerialRecvThread	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Hw.cpp	/^static void * SerialRecvThread(void * arg)$/;"	f	file:
+SerialStart	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Hw.cpp	/^static int SerialStart(const char *dev_name,int baud_rate)$/;"	f	file:
+SerialStartThread	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Hw.cpp	/^int SerialStartThread(void)$/;"	f
+SerialWrite	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Hw.cpp	/^static int SerialWrite(unsigned char *buf,int len)$/;"	f	file:
+Session_Queue	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.h	/^typedef struct Session_Queue$/;"	s
+Session_Queue	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.h	/^}Session_Queue;$/;"	t	typeref:struct:Session_Queue
+SetSpeed	.\SDK_Zeus\control\sdk_lib\DJI_Control.h	/^    float SetSpeed;$/;"	m	struct:Speed_PID
+Simple_Task_Threadfun	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Test.cpp	/^static void * Simple_Task_Threadfun(void * arg)$/;"	f	file:
+SpeedY_out	.\SDK_Zeus\control\main.cpp	/^float SpeedZ_out,Rate_YAW_out,SpeedY_out;$/;"	v
+SpeedZ_out	.\SDK_Zeus\control\main.cpp	/^float SpeedZ_out,Rate_YAW_out,SpeedY_out;$/;"	v
+Speed_PID	.\SDK_Zeus\control\sdk_lib\DJI_Control.h	/^struct Speed_PID$/;"	s
+Start_Control_Thread	.\SDK_Zeus\control\sdk_lib\DJI_Control.cpp	/^int Start_Control_Thread(void)$/;"	f
+Start_Dect_1_Thread	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.cpp	/^int Start_Dect_1_Thread(void)$/;"	f
+Start_Dect_2_Thread	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.cpp	/^int Start_Dect_2_Thread(void)$/;"	f
+Start_ImagDect_Thread	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.cpp	/^int Start_ImagDect_Thread(void)$/;"	f
+Start_PollThread	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.cpp	/^static int Start_PollThread(void)$/;"	f	file:
+Start_Simple_Task_Thread	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Test.cpp	/^int Start_Simple_Task_Thread(void)$/;"	f
+Statues	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.h	/^enum Statues{detect_line_ready,detect_line,$/;"	g
+T_kd	.\SDK_Zeus\control\main.cpp	/^float R_kp,R_kd,T_kp,T_kd,x,Height_Set;$/;"	v
+T_kp	.\SDK_Zeus\control\main.cpp	/^float R_kp,R_kd,T_kp,T_kd,x,Height_Set;$/;"	v
+Test_ACK_Callback	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.cpp	/^void Test_ACK_Callback(ProHeader *header)$/;"	f
+Test_Control	.\SDK_Zeus\control\sdk_lib\DJI_Control.cpp	/^int Test_Control(void)$/;"	f
+Test_Pro_Link	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.cpp	/^void Test_Pro_Link(void)$/;"	f
+Theta	.\SDK_Zeus\control\main.cpp	/^Theta_PID Theta;$/;"	v
+Theta_Actual	.\SDK_Zeus\control\main.cpp	/^float Theta_Actual;$/;"	v
+Theta_PID	.\SDK_Zeus\control\sdk_lib\DJI_Control.h	/^struct Theta_PID$/;"	s
+Theta_PIDinit	.\SDK_Zeus\control\sdk_lib\DJI_Control.cpp	/^void Theta_PIDinit()$/;"	f
+VO_OUTPUT	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Test.h	/^}VO_OUTPUT;$/;"	t	typeref:struct:__anon1
+XY_SPEED_YAW_RATE	.\SDK_Zeus\control\sdk_lib\DJI_Control.cpp	25;"	d	file:
+_SDK_CALC_CRC_HEAD	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.h	22;"	d
+_SDK_CALC_CRC_TAIL	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.h	23;"	d
+_SDK_CRC_DATA_SIZE	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.h	15;"	d
+_SDK_CRC_HEAD_SIZE	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.h	14;"	d
+_SDK_FULL_DATA_SIZE_MIN	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.h	17;"	d
+_SDK_HEAD_DATA_LEN	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.h	16;"	d
+_SDK_MAX_RECV_SIZE	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.h	12;"	d
+_SDK_SOF	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.h	13;"	d
+_SDK_U16_SET	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.h	20;"	d
+_SDK_U32_SET	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.h	19;"	d
+__DJI_PRO_APP_H__	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	9;"	d
+__DJI_PRO_CODEC_H__	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.h	2;"	d
+__DJI_PRO_HW_H__	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Hw.h	2;"	d
+_cmd_tab	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	/^typedef struct _cmd_tab$/;"	s
+_recv_std_msgs	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Test.cpp	219;"	d	file:
+_set_tab	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	/^typedef struct _set_tab$/;"	s
+a	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	/^	sdk_3_12B_data_t	a;$/;"	m	struct:__anon15
+ack_callback	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	/^	cmd_ack_callback 	ack_callback;$/;"	m	struct:__anon19
+ack_callback	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.h	/^	ACK_Callback_Func ack_callback;$/;"	m	struct:ProSendParameter
+ack_callback	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.h	/^	ACK_Callback_Func ack_callback;$/;"	m	struct:Session_Queue
+ack_result	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	/^	unsigned short 		ack_result;$/;"	m	struct:__anon19
+ack_timeout	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.h	/^	unsigned int ack_timeout : 16;$/;"	m	struct:Session_Queue
+ack_timeout	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.h	/^	unsigned short ack_timeout;	\/\/unit is ms$/;"	m	struct:ProSendParameter
+activation_data_t	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	/^}activation_data_t;$/;"	t	typeref:struct:__anon20
+activation_msg	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Test.cpp	/^static activation_data_t activation_msg = {14,2,1,""};$/;"	v	file:
+activation_status_s	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Test.cpp	/^static unsigned char activation_status_s = 0xFF;$/;"	v	file:
+aes256_context	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.cpp	/^} aes256_context;$/;"	t	typeref:struct:tagAES256Context	file:
+aes256_decrypt_ecb	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.cpp	/^void aes256_decrypt_ecb(aes256_context *ctx, unsigned char *buf)$/;"	f
+aes256_done	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.cpp	/^void aes256_done(aes256_context *ctx)$/;"	f
+aes256_encrypt_ecb	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.cpp	/^void aes256_encrypt_ecb(aes256_context *ctx, unsigned char *buf)$/;"	f
+aes256_init	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.cpp	/^void aes256_init(aes256_context *ctx, unsigned char *k)$/;"	f
+aes_addRoundKey	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.cpp	/^void aes_addRoundKey(unsigned char *buf, unsigned char *key)$/;"	f
+aes_addRoundKey_cpy	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.cpp	/^void aes_addRoundKey_cpy(unsigned char *buf, unsigned char *key, unsigned char *cpk)$/;"	f
+aes_expandDecKey	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.cpp	/^void aes_expandDecKey(unsigned char *k, unsigned char *rc)$/;"	f
+aes_expandEncKey	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.cpp	/^void aes_expandEncKey(unsigned char *k, unsigned char *rc)$/;"	f
+aes_mixColumns	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.cpp	/^void aes_mixColumns(unsigned char *buf)$/;"	f
+aes_mixColumns_inv	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.cpp	/^void aes_mixColumns_inv(unsigned char *buf)$/;"	f
+aes_shiftRows	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.cpp	/^void aes_shiftRows(unsigned char *buf)$/;"	f
+aes_shiftRows_inv	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.cpp	/^void aes_shiftRows_inv(unsigned char *buf)$/;"	f
+aes_subBytes	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.cpp	/^void aes_subBytes(unsigned char *buf)$/;"	f
+aes_subBytes_inv	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.cpp	/^void aes_subBytes_inv(unsigned char *buf)$/;"	f
+alti	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	/^	fp32	alti;$/;"	m	struct:__anon12
+api_ctrl_data	.\SDK_Zeus\control\sdk_lib\DJI_Control.h	/^}api_ctrl_data;$/;"	t	typeref:struct:__anon8
+api_ctrl_without_sensor_data_t	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	/^}api_ctrl_without_sensor_data_t;$/;"	t	typeref:struct:__anon9
+app_api_level	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	/^	unsigned int	app_api_level;$/;"	m	struct:__anon20
+app_api_level	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Test.cpp	/^int		app_api_level;$/;"	v
+app_bundle_id	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	/^	unsigned char		app_bundle_id[32];$/;"	m	struct:__anon20
+app_bundle_id	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Test.cpp	/^std::string	app_bundle_id;$/;"	v
+app_cmd_tab_ptr	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.cpp	/^cmd_handler_table_t* app_cmd_tab_ptr;$/;"	v
+app_id	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	/^	unsigned int	app_id;$/;"	m	struct:__anon20
+app_id	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Test.cpp	/^int		app_id;$/;"	v
+app_recv_hook	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.cpp	/^Req_Callback_Func app_recv_hook;$/;"	v
+app_set_tab_ptr	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.cpp	/^set_handler_table_t* app_set_tab_ptr;$/;"	v
+app_ver	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	/^	unsigned int	app_ver;$/;"	m	struct:__anon20
+app_version	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Test.cpp	/^int		app_version;$/;"	v
+arealength	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.cpp	/^int arealength;$/;"	v
+arealength	.\ball and square.cpp	/^int arealength;$/;"	v
+ballImage	.\ball and square.cpp	/^Mat srcImage, midImage, dstImage,ballImage;$/;"	v
+basic_test_cmd	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Test.cpp	/^void basic_test_cmd(bool &is_init)$/;"	f
+basic_test_mode2	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Test.cpp	/^void basic_test_mode2(bool &is_init)$/;"	f
+basic_test_mode4	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Test.cpp	/^void basic_test_mode4(bool &is_init)$/;"	f
+battery_remaining_capacity	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	/^	unsigned char			battery_remaining_capacity;$/;"	m	struct:__anon15
+battery_remaining_s	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Test.cpp	/^static unsigned char battery_remaining_s = 0xFF;$/;"	v	file:
+baud_rate	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Test.cpp	/^int		baud_rate;$/;"	v
+bestrho	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.cpp	/^float bestrho;$/;"	v
+bestrho	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.h	/^		int bestrho;$/;"	m	struct:__anon5
+besttheta	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.cpp	/^float besttheta;$/;"	v
+besttheta	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.h	/^		int besttheta;$/;"	m	struct:__anon5
+bgr_planes	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.cpp	/^vector<Mat> bgr_planes;$/;"	v
+bgr_planes	.\ball and square.cpp	/^vector<Mat> bgr_planes;$/;"	v
+buf	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.h	/^	unsigned char *buf;$/;"	m	struct:ProAckParameter
+buf	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.h	/^	unsigned char *buf;$/;"	m	struct:ProSendParameter
+camera_state	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Test.cpp	/^float camera_state[3];\/\/pitch, yaw, roll$/;"	v
+capture	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.cpp	/^      VideoCapture capture;$/;"	m	class:DJI_Imag_Dect	file:
+capture	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.cpp	/^VideoCapture capture;$/;"	v
+capture	.\ball and square.cpp	/^VideoCapture capture;$/;"	v
+centers	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.cpp	/^vector<Point> centers;$/;"	v
+centers	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.h	/^		vector<Point> centers;$/;"	m	struct:__anon5
+centers	.\ball and square.cpp	/^vector<Point> centers;$/;"	v
+circles	.\ball and square.cpp	/^vector<Vec3f> circles;$/;"	v
+cmd	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	/^	cmd_agency_data_t	cmd;$/;"	m	struct:__anon19
+cmd_ack_callback	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	/^typedef void (*cmd_ack_callback)(unsigned short *ack);$/;"	t
+cmd_agency_data_t	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	/^}cmd_agency_data_t;$/;"	t	typeref:struct:__anon18
+cmd_callback_fun	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Test.cpp	/^void cmd_callback_fun(unsigned short *ack)$/;"	f
+cmd_callback_test_fun	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Test.cpp	/^void cmd_callback_test_fun(unsigned short *ack)$/;"	f
+cmd_data	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	/^	unsigned char			cmd_data;$/;"	m	struct:__anon18
+cmd_handler_tab	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Test.cpp	/^cmd_handler_table_t cmd_handler_tab[] =$/;"	v
+cmd_handler_table_t	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	/^}cmd_handler_table_t;$/;"	t	typeref:struct:_cmd_tab
+cmd_id	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	/^    unsigned char             cmd_id;$/;"	m	struct:_cmd_tab
+cmd_id	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	/^    unsigned char     cmd_id;$/;"	m	struct:__anon17
+cmd_send_flag	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Test.cpp	/^static unsigned char cmd_send_flag = 1;$/;"	v	file:
+cmd_sequence	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	/^	unsigned char			cmd_sequence;$/;"	m	struct:__anon18
+cmd_set	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	/^    unsigned char                cmd_set;$/;"	m	struct:_set_tab
+cmd_set	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	/^    unsigned char     cmd_set;$/;"	m	struct:__anon17
+cmd_unit	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.cpp	/^static dji_sdk_cmd_unit cmd_unit = {0};$/;"	v	file:
+comm_key	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.h	/^    unsigned char         comm_key[32];$/;"	m	struct:__anon4
+comm_recv_buf	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.h	/^	unsigned char comm_recv_buf[_SDK_MAX_RECV_SIZE];$/;"	m	struct:__anon4
+contours	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.cpp	/^vector<vector<Point> > contours;$/;"	v
+contours	.\ball and square.cpp	/^vector<vector<Point> > contours;$/;"	v
+crc16_update	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.cpp	/^unsigned short crc16_update(unsigned short crc, unsigned char ch)$/;"	f
+crc32_update	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.cpp	/^unsigned int crc32_update(unsigned int crc, unsigned char ch)$/;"	f
+crc_tab16	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.cpp	/^unsigned short crc_tab16[] =$/;"	v
+crc_tab32	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.cpp	/^unsigned int crc_tab32[] =$/;"	v
+ctrl_device	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	/^	unsigned char			ctrl_device;$/;"	m	struct:__anon15
+ctrl_device_s	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Test.cpp	/^static unsigned char ctrl_device_s = 0xFF;$/;"	v	file:
+ctrl_flag	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	/^	unsigned char ctrl_flag;$/;"	m	struct:__anon9
+ctrl_mode	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Test.cpp	/^static float ctrl_mode = 1;$/;"	v	file:
+cubesDetected	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.cpp	/^bool cubesDetected=false;$/;"	v
+data_buf	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	/^    unsigned char     data_buf[DATA_MAX_SIZE];$/;"	m	struct:__anon17
+data_recv	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Test.cpp	/^bool data_recv;$/;"	v
+deckey	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.cpp	/^    unsigned char deckey[32];$/;"	m	struct:tagAES256Context	file:
+deltaCam	.\SDK_Zeus\control\main.cpp	/^ float deltaCam;$/;"	v
+detect_1_square	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.h	/^             detect_1_square_ready,detect_1_square,$/;"	e	enum:Statues
+detect_1_square_ready	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.h	/^             detect_1_square_ready,detect_1_square,$/;"	e	enum:Statues
+detect_9_square	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.h	/^             detect_9_square_ready,detect_9_square,$/;"	e	enum:Statues
+detect_9_square_ready	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.h	/^             detect_9_square_ready,detect_9_square,$/;"	e	enum:Statues
+detect_ball_square	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.h	/^             detect_ball_square_ready,detect_ball_square$/;"	e	enum:Statues
+detect_ball_square_ready	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.h	/^             detect_ball_square_ready,detect_ball_square$/;"	e	enum:Statues
+detect_line	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.h	/^enum Statues{detect_line_ready,detect_line,$/;"	e	enum:Statues
+detect_line_ready	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.h	/^enum Statues{detect_line_ready,detect_line,$/;"	e	enum:Statues
+detect_line_square	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.h	/^             detect_line_square_ready,detect_line_square,$/;"	e	enum:Statues
+detect_line_square_ready	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.h	/^             detect_line_square_ready,detect_line_square,$/;"	e	enum:Statues
+dji_sdk_cmd_unit	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	/^}dji_sdk_cmd_unit;$/;"	t	typeref:struct:__anon19
+dji_sdk_data_msg_t	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	/^}dji_sdk_data_msg_t;$/;"	t	typeref:struct:__anon17
+drone_attitude	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Test.cpp	/^float drone_attitude[3];$/;"	v
+drone_ctrl_data	.\SDK_Zeus\control\sdk_lib\DJI_Control.cpp	/^api_ctrl_data       drone_ctrl_data;$/;"	v
+drone_data	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Test.cpp	/^uav_data_to_ground drone_data;$/;"	v
+drone_gimbal_data	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.cpp	/^gimbal_data  drone_gimbal_data={0,0,1};\/\/定义角度信息 为方格图像检测输入信息$/;"	v
+drone_image_data	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.cpp	/^image_data   drone_image_data;\/\/图像检测返回的数据$/;"	v
+dstImage	.\ball and square.cpp	/^Mat srcImage, midImage, dstImage,ballImage;$/;"	v
+effect_parameter	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.cpp	/^     void effect_parameter(){$/;"	f	class:DJI_Imag_Dect
+effect_size	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.cpp	/^     void effect_size(){$/;"	f	class:DJI_Imag_Dect
+enc_enabled	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.h	/^    unsigned char         enc_enabled;$/;"	m	struct:__anon4
+enc_key	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Test.cpp	/^std::string     enc_key;$/;"	v
+enc_type	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.h	/^	unsigned int enc_type : 3;$/;"	m	struct:__anon3
+enc_type	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.h	/^	unsigned int enc_type : 3;$/;"	m	struct:ProHeader
+enckey	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.cpp	/^    unsigned char enckey[32];$/;"	m	struct:tagAES256Context	file:
+end_addr	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.h	/^	unsigned long end_addr;$/;"	m	struct:Memory_Manage_Unit
+err	.\SDK_Zeus\control\sdk_lib\DJI_Control.h	/^    float err;$/;"	m	struct:Height_PID
+err	.\SDK_Zeus\control\sdk_lib\DJI_Control.h	/^    float err;$/;"	m	struct:Rho_PID
+err	.\SDK_Zeus\control\sdk_lib\DJI_Control.h	/^    float err;$/;"	m	struct:Speed_PID
+err	.\SDK_Zeus\control\sdk_lib\DJI_Control.h	/^    float err;$/;"	m	struct:Theta_PID
+err_last	.\SDK_Zeus\control\sdk_lib\DJI_Control.h	/^    float err_last;$/;"	m	struct:Height_PID
+err_last	.\SDK_Zeus\control\sdk_lib\DJI_Control.h	/^    float err_last;$/;"	m	struct:Rho_PID
+err_last	.\SDK_Zeus\control\sdk_lib\DJI_Control.h	/^    float err_last;$/;"	m	struct:Speed_PID
+err_last	.\SDK_Zeus\control\sdk_lib\DJI_Control.h	/^    float err_last;$/;"	m	struct:Theta_PID
+err_next	.\SDK_Zeus\control\sdk_lib\DJI_Control.h	/^    float err_next;$/;"	m	struct:Height_PID
+err_next	.\SDK_Zeus\control\sdk_lib\DJI_Control.h	/^    float err_next;$/;"	m	struct:Speed_PID
+err_next	.\SDK_Zeus\control\sdk_lib\DJI_Control.h	/^    float err_next;$/;"	m	struct:Theta_PID
+filename	.\SDK_Zeus\control\main.cpp	/^char filename[20];$/;"	v
+find_cmd_index	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.cpp	/^unsigned char find_cmd_index(unsigned char cmd_id,cmd_handler_table_t* p_cmd_handler_tab)$/;"	f
+find_set_index	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.cpp	/^unsigned char find_set_index(unsigned char cmd_set,set_handler_table_t* p_set_handler_tab)$/;"	f
+fmu_api_gimbal_data	.\SDK_Zeus\control\sdk_lib\DJI_Control.h	/^}fmu_api_gimbal_data;$/;"	t	typeref:struct:__anon7
+fp32	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	/^typedef float 	fp32;$/;"	t
+fp64	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	/^typedef double	fp64;$/;"	t
+func_cmd_handler	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	/^typedef int16_t (*func_cmd_handler)(unsigned char cmd_id,unsigned char* pbuf,unsigned short len, req_id_t req_id);$/;"	t
+gear	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	/^	int16_t gear;$/;"	m	struct:__anon13
+gethist	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.cpp	/^bool gethist(Mat dstImage){$/;"	f
+gf_alog	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.cpp	/^unsigned char gf_alog(unsigned char x) \/\/ calculate anti-logarithm gen 3$/;"	f
+gf_log	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.cpp	/^unsigned char gf_log(unsigned char x) \/\/ calculate logarithm gen 3$/;"	f
+gf_mulinv	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.cpp	/^unsigned char gf_mulinv(unsigned char x) \/\/ calculate multiplicative inverse$/;"	f
+gimbal	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	/^	sdk_3_12B_data_t	gimbal;$/;"	m	struct:__anon15
+gimbal_data	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.h	/^}gimbal_data;$/;"	t	typeref:struct:__anon6
+h	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Test.h	/^    float h;$/;"	m	struct:__anon2
+head_crc	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.h	/^	unsigned int head_crc : 16;$/;"	m	struct:__anon3
+head_crc	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.h	/^	unsigned int head_crc : 16;$/;"	m	struct:ProHeader
+health_flag	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	/^	unsigned char health_flag;$/;"	m	struct:__anon12
+height	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.h	/^float  height;$/;"	m	struct:__anon6
+height	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	/^	fp32	height;$/;"	m	struct:__anon12
+height_adj	.\SDK_Zeus\control\sdk_lib\DJI_Control.cpp	/^Height_PID height_adj ;$/;"	v
+hierarchy	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.cpp	/^vector<Vec4i> hierarchy;$/;"	v
+hierarchy	.\ball and square.cpp	/^vector<Vec4i> hierarchy;$/;"	v
+hsv_planes	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.cpp	/^vector<Mat> hsv_planes;$/;"	v
+image_data	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.h	/^}image_data;$/;"	t	typeref:struct:__anon5
+img	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.cpp	/^Mat img;$/;"	v
+img	.\ball and square.cpp	/^Mat img;$/;"	v
+initCam	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.cpp	/^void initCam(){$/;"	f
+initPlane	.\SDK_Zeus\control\main.cpp	/^int initPlane(){$/;"	f
+initvideo	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.cpp	/^void initvideo(){$/;"	f
+is_ack	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.h	/^	unsigned int is_ack : 1;$/;"	m	struct:__anon3
+is_ack	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.h	/^	unsigned int is_ack : 1;$/;"	m	struct:ProHeader
+is_send_cmd	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	/^	unsigned char 		is_send_cmd;$/;"	m	struct:__anon19
+is_sys_error	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.cpp	/^bool is_sys_error(unsigned short ack_data)$/;"	f
+key	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.cpp	/^    unsigned char key[32];$/;"	m	struct:tagAES256Context	file:
+key	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Test.cpp	/^static const char *key;$/;"	v	file:
+lati	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	/^	fp64	lati;$/;"	m	struct:__anon12
+len	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	/^	unsigned char     len;$/;"	m	struct:__anon17
+length	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.h	/^	unsigned int length : 10;$/;"	m	struct:__anon3
+length	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.h	/^	unsigned int length : 10;$/;"	m	struct:ProHeader
+length	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.h	/^	unsigned int length;$/;"	m	struct:ProAckParameter
+length	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.h	/^	unsigned int length;$/;"	m	struct:ProSendParameter
+lines	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.cpp	/^vector<Vec2f> lines;\/\/定义一个矢量结构lines用于存放得到的线段矢量集合$/;"	v
+longti	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	/^	fp64	longti;$/;"	m	struct:__anon12
+m_brightness	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.cpp	/^  int m_brightness;$/;"	m	class:DJI_Imag_Dect	file:
+m_deviceId	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.cpp	/^  int m_deviceId; \/\/ camera id (in case of multiple cameras)$/;"	m	class:DJI_Imag_Dect	file:
+m_draw	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.cpp	/^     bool m_draw; \/\/ draw image and April tag detections?$/;"	m	class:DJI_Imag_Dect	file:
+m_exposure	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.cpp	/^  int m_exposure;$/;"	m	class:DJI_Imag_Dect	file:
+m_fx	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.cpp	/^  double m_fx; \/\/ camera focal length in pixels$/;"	m	class:DJI_Imag_Dect	file:
+m_fy	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.cpp	/^  double m_fy;$/;"	m	class:DJI_Imag_Dect	file:
+m_gain	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.cpp	/^  int m_gain;$/;"	m	class:DJI_Imag_Dect	file:
+m_height	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.cpp	/^  int m_height;$/;"	m	class:DJI_Imag_Dect	file:
+m_px	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.cpp	/^  double m_px; \/\/ camera principal point$/;"	m	class:DJI_Imag_Dect	file:
+m_py	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.cpp	/^  double m_py;$/;"	m	class:DJI_Imag_Dect	file:
+m_timing	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.cpp	/^  bool m_timing; \/\/ print timing information for each tag extraction call$/;"	m	class:DJI_Imag_Dect	file:
+m_width	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.cpp	/^  int m_width; \/\/ image size in pixels$/;"	m	class:DJI_Imag_Dect	file:
+mag	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	/^	sdk_3_6B_data_t		mag;$/;"	m	struct:__anon15
+magic	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.h	/^	unsigned int magic[0];$/;"	m	struct:__anon3
+magic	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.h	/^	unsigned int magic[0];$/;"	m	struct:ProHeader
+main	.\SDK_Zeus\control\main.cpp	/^int main()$/;"	f
+main	.\ball and square.cpp	/^int main(){$/;"	f
+midImage	.\ball and square.cpp	/^Mat srcImage, midImage, dstImage,ballImage;$/;"	v
+mm	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.cpp	/^VideoCapture mm;$/;"	v
+mmu	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.h	/^	Memory_Manage_Unit *mmu;$/;"	m	struct:Ack_Session_Queue
+mmu	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.h	/^	Memory_Manage_Unit *mmu;$/;"	m	struct:Session_Queue
+mmu_index	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.h	/^	unsigned char mmu_index;$/;"	m	struct:Memory_Manage_Unit
+mode	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	/^	int16_t	mode;$/;"	m	struct:__anon13
+my_fps	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.cpp	/^  int my_fps;$/;"	m	class:DJI_Imag_Dect	file:
+mycond	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.cpp	/^  pthread_cond_t mycond = PTHREAD_COND_INITIALIZER; \/*初始化条件变量*\/$/;"	v
+mye	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Test.cpp	/^float mye[3];$/;"	v
+mymutex	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.cpp	/^  pthread_mutex_t mymutex = PTHREAD_MUTEX_INITIALIZER; \/*初始化互斥锁*\/$/;"	v
+myq	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Test.cpp	/^float myq[4];$/;"	v
+nav_force_close_handler	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Test.cpp	/^int16_t nav_force_close_handler(unsigned char cmd_id,unsigned char* pbuf,unsigned short len,req_id_t req_id)$/;"	f
+nav_force_close_req_id	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Test.cpp	/^static req_id_t nav_force_close_req_id = {0};$/;"	v	file:
+need_encrypt	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	/^    unsigned char	need_encrypt	: 1;$/;"	m	struct:__anon16
+need_encrypt	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.h	/^	unsigned short need_encrypt : 1;$/;"	m	struct:ProSendParameter
+need_encrypt	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.h	/^	unsigned short need_encrypt : 8;$/;"	m	struct:ProAckParameter
+on_mouse	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.cpp	/^void on_mouse(int event, int x, int y, int flags, void* ustc ,Mat srcImage,Mat midImage){$/;"	f
+p_cmd_handler_table	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	/^    cmd_handler_table_t*   p_cmd_handler_table;$/;"	m	struct:_set_tab
+padding	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.h	/^	unsigned int padding : 5;$/;"	m	struct:__anon3
+padding	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.h	/^	unsigned int padding : 5;$/;"	m	struct:ProHeader
+para	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.cpp	/^int para = 0;$/;"	v
+para_max	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.cpp	/^static int para_max = 10;$/;"	v	file:
+parameterSet	.\SDK_Zeus\control\main.cpp	/^void parameterSet(){$/;"	f
+pbuf_t	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Test.cpp	/^int pbuf_t[4];\/\/point1.x \/ point1.y \/ point2.x \/ point2.y$/;"	v
+pf_cmd_handler	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	/^    func_cmd_handler    pf_cmd_handler;$/;"	m	struct:_cmd_tab
+pitch	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.h	/^float pitch;$/;"	m	struct:__anon6
+pitch	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	/^	int16_t	pitch;$/;"	m	struct:__anon13
+pitch_degree	.\SDK_Zeus\control\sdk_lib\DJI_Control.h	/^    int	pitch_degree;$/;"	m	struct:__anon7
+pitch_or_y	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	/^	fp32	pitch_or_y;$/;"	m	struct:__anon9
+pkg_type	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.h	/^	unsigned short pkg_type : 2;$/;"	m	struct:ProSendParameter
+pos	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	/^	sdk_4_24B_data_t	pos;$/;"	m	struct:__anon15
+pre_seq_num	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.h	/^	unsigned int pre_seq_num;$/;"	m	struct:Session_Queue
+pre_timestamp	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.h	/^	unsigned int pre_timestamp;$/;"	m	struct:Session_Queue
+prerho	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.cpp	/^float prerho=0;$/;"	v
+pretheta	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.cpp	/^float pretheta=0;$/;"	v
+ptr_aes256_codec	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.cpp	/^typedef void(*ptr_aes256_codec)(aes256_context *ctx, unsigned char *buf);$/;"	t	file:
+ptr_filter_hook	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.h	/^typedef void(*ptr_filter_hook)(SDKHeader* p_head);$/;"	t
+q	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	/^	sdk_4_16B_data_t	q;$/;"	m	struct:__anon15
+q0	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	/^	fp32	q0;$/;"	m	struct:__anon10
+q1	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	/^	fp32	q1;$/;"	m	struct:__anon10
+q2	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	/^	fp32	q2;$/;"	m	struct:__anon10
+q2e	.\SDK_Zeus\control\sdk_lib\DJI_Control.cpp	/^int q2e(const float *pq, float *pe)$/;"	f
+q2r	.\SDK_Zeus\control\sdk_lib\DJI_Control.cpp	/^int q2r(const float *pq, float *pr)$/;"	f
+q3	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	/^	fp32	q3;$/;"	m	struct:__anon10
+r2e	.\SDK_Zeus\control\sdk_lib\DJI_Control.cpp	/^int r2e(const float *pr, float *pe)$/;"	f
+random_test_ack_cmd_callback	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Test.cpp	/^void random_test_ack_cmd_callback(ProHeader *header)$/;"	f
+random_test_cmd	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Test.cpp	/^void random_test_cmd(bool &is_init)$/;"	f
+rbuf	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Test.cpp	/^char rbuf[128];$/;"	v
+rbuf_len	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Test.cpp	/^int rbuf_len;$/;"	v
+rc	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	/^	sdk_5_10B_data_t	rc;$/;"	m	struct:__anon15
+recv_data	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.cpp	/^static dji_sdk_data_msg_t recv_data = {0};$/;"	v	file:
+recv_index	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.h	/^	unsigned short recv_index;$/;"	m	struct:__anon4
+recv_sdk_std_msgs	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Test.cpp	/^static sdk_std_msg_t recv_sdk_std_msgs = {0};$/;"	v	file:
+req_id_t	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	/^}req_id_t;$/;"	t	typeref:struct:__anon16
+res	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.h	/^	unsigned int res:25;$/;"	m	struct:Ack_Session_Queue
+res	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.h	/^	unsigned short res;$/;"	m	struct:Memory_Manage_Unit
+reserve	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	/^    unsigned char	reserve	   	: 2;$/;"	m	struct:__anon16
+retry_send_time	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.h	/^	unsigned int retry_send_time : 5;$/;"	m	struct:Session_Queue
+retry_time	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.h	/^	unsigned short retry_time : 13;$/;"	m	struct:ProSendParameter
+returnrho	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.cpp	/^int returntheta, returnrho;$/;"	v
+returntheta	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.cpp	/^int returntheta, returnrho;$/;"	v
+reuse_count	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.h	/^	unsigned short reuse_count;$/;"	m	struct:__anon4
+reuse_index	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.h	/^	unsigned short reuse_index;$/;"	m	struct:__anon4
+reversed0	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.h	/^	unsigned int reversed0 : 2; \/\/ always 0$/;"	m	struct:__anon3
+reversed0	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.h	/^	unsigned int reversed0 : 2; 	\/\/ always 0$/;"	m	struct:ProHeader
+reversed1	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.h	/^	unsigned int reversed1 : 24;$/;"	m	struct:__anon3
+reversed1	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.h	/^	unsigned int reversed1 : 24;$/;"	m	struct:ProHeader
+rj_sbox	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.cpp	/^unsigned char rj_sbox(unsigned char x)$/;"	f
+rj_sbox	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.cpp	116;"	d	file:
+rj_sbox_inv	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.cpp	/^unsigned char rj_sbox_inv(unsigned char x)$/;"	f
+rj_sbox_inv	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.cpp	117;"	d	file:
+rj_xtime	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.cpp	/^unsigned char rj_xtime(unsigned char x)$/;"	f
+roll	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.h	/^float roll;$/;"	m	struct:__anon6
+roll	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	/^	int16_t	roll;$/;"	m	struct:__anon13
+roll_degree	.\SDK_Zeus\control\sdk_lib\DJI_Control.h	/^    int	roll_degree;$/;"	m	struct:__anon7
+roll_or_x	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	/^	fp32 	roll_or_x;$/;"	m	struct:__anon9
+ros_ctrl_data_callback	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Test.cpp	/^void ros_ctrl_data_callback(float x,float y,float z,float w)$/;"	f
+ros_ctrl_mode_callback	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Test.cpp	/^void ros_ctrl_mode_callback(int data)$/;"	f
+rv	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.cpp	/^  int rv;$/;"	v
+sbox	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.cpp	/^const unsigned char sbox[256] ={$/;"	v
+sboxinv	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.cpp	/^const unsigned char sboxinv[256] ={$/;"	v
+sdk_3_12B_data_t	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	/^}sdk_3_12B_data_t;$/;"	t	typeref:struct:__anon11
+sdk_3_6B_data_t	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	/^}sdk_3_6B_data_t;$/;"	t	typeref:struct:__anon14
+sdk_4_16B_data_t	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	/^}sdk_4_16B_data_t;$/;"	t	typeref:struct:__anon10
+sdk_4_24B_data_t	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	/^}sdk_4_24B_data_t;$/;"	t	typeref:struct:__anon12
+sdk_5_10B_data_t	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	/^}sdk_5_10B_data_t;$/;"	t	typeref:struct:__anon13
+sdk_ack_cmd_callback	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.cpp	/^void sdk_ack_cmd_callback(ProHeader *header)$/;"	f
+sdk_ack_nav_open_close_callback	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Test.cpp	/^void sdk_ack_nav_open_close_callback(ProHeader *header)$/;"	f
+sdk_byte_stream_handler	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.cpp	/^void sdk_byte_stream_handler(SDKFilter* p_filter, unsigned char in_data)$/;"	f
+sdk_call_data_app	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.cpp	/^void sdk_call_data_app(SDKFilter* p_filter)$/;"	f
+sdk_check_stream_state	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.cpp	/^void sdk_check_stream_state(SDKFilter* p_filter)$/;"	f
+sdk_comm_set_key	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.cpp	/^void sdk_comm_set_key(SDKFilter* p_filter, const char* sz_key)$/;"	f
+sdk_encrypt_interface	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.cpp	/^unsigned short sdk_encrypt_interface(unsigned char *pdest, const unsigned char *psrc,$/;"	f
+sdk_pure_transfer_handler	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Test.cpp	/^int16_t sdk_pure_transfer_handler(uint8_t cmd_id,uint8_t* pbuf,uint16_t len,req_id_t req_id)\/\/data[0] is ID (tracking ID is 0, uav ID is 1)$/;"	f
+sdk_pure_transfer_handler_two_points	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Test.cpp	/^int16_t sdk_pure_transfer_handler_two_points(uint8_t cmd_id,uint8_t* pbuf,uint16_t len,req_id_t req_id)$/;"	f
+sdk_serial_byte_handle	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.cpp	/^void sdk_serial_byte_handle(unsigned char in_data)$/;"	f
+sdk_serial_set_hook	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.cpp	/^void sdk_serial_set_hook(ptr_filter_hook p_hook)$/;"	f
+sdk_set_encrypt_key_interface	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.cpp	/^void sdk_set_encrypt_key_interface(const char* sz_key)$/;"	f
+sdk_std_msg_t	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	/^}sdk_std_msg_t;$/;"	t	typeref:struct:__anon15
+sdk_std_msgs_handler	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Test.cpp	/^int16_t sdk_std_msgs_handler(unsigned char cmd_id,unsigned char* pbuf,unsigned short len,req_id_t req_id)$/;"	f
+sdk_stream_codec	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.cpp	/^void sdk_stream_codec(SDKFilter* p_filter, SDKHeader* p_head, ptr_aes256_codec codec_func)$/;"	f
+sdk_stream_crc16_calc	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.cpp	/^unsigned short sdk_stream_crc16_calc(const unsigned char* pMsg, unsigned int nLen)$/;"	f
+sdk_stream_crc32_calc	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.cpp	/^unsigned int sdk_stream_crc32_calc(const unsigned char* pMsg, unsigned int nLen)$/;"	f
+sdk_stream_prepare	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.cpp	/^void sdk_stream_prepare(SDKFilter* p_filter, SDKHeader* p_head)$/;"	f
+sdk_stream_recalc_crc	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.cpp	/^void sdk_stream_recalc_crc(void* p_data)$/;"	f
+sdk_stream_shift_data	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.cpp	/^void sdk_stream_shift_data(SDKFilter* p_filter)$/;"	f
+sdk_stream_store_data	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.cpp	/^void sdk_stream_store_data(SDKFilter* p_filter, unsigned char in_data)$/;"	f
+sdk_stream_update_reuse_part	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.cpp	/^void sdk_stream_update_reuse_part(SDKFilter* p_filter)$/;"	f
+sdk_stream_verify_data	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.cpp	/^void sdk_stream_verify_data(SDKFilter* p_filter)$/;"	f
+sdk_stream_verify_head	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.cpp	/^void sdk_stream_verify_head(SDKFilter* p_filter)$/;"	f
+sdk_transform2byte	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.cpp	/^static void sdk_transform2byte(const char *pstr,unsigned char *pdata)$/;"	f	file:
+send_data_air2ground	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Test.cpp	/^void send_data_air2ground(uav_data_to_ground data)$/;"	f
+send_data_air2ground_test	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Test.cpp	/^void send_data_air2ground_test(int* data)\/\/uav_data_to_ground$/;"	f
+send_lock	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.cpp	/^static pthread_mutex_t send_lock = PTHREAD_MUTEX_INITIALIZER;$/;"	v	file:
+sent_time	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.h	/^	unsigned int sent_time : 5;$/;"	m	struct:Session_Queue
+seq_num	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.h	/^	unsigned short seq_num;$/;"	m	struct:ProAckParameter
+sequence_number	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	/^    unsigned short	sequence_number;$/;"	m	struct:__anon16
+sequence_number	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.h	/^	unsigned int sequence_number : 16;$/;"	m	struct:__anon3
+sequence_number	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.h	/^	unsigned int sequence_number : 16;$/;"	m	struct:ProHeader
+serial_fd	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Hw.cpp	/^static int serial_fd = -1;$/;"	v	file:
+serial_fd_set	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Hw.cpp	/^static fd_set serial_fd_set;$/;"	v	file:
+serial_hook	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.cpp	/^ptr_filter_hook serial_hook = (ptr_filter_hook)Pro_Link_Recv_Hook;$/;"	v
+serial_name	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Test.cpp	/^std::string	serial_name;$/;"	v
+serial_sdk	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.cpp	/^SDKFilter serial_sdk = { 0 };$/;"	v
+session_id	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	/^    unsigned char	session_id 	: 5;$/;"	m	struct:__anon16
+session_id	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.h	/^	unsigned int session_id : 5;$/;"	m	struct:__anon3
+session_id	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.h	/^	unsigned int session_id : 5;$/;"	m	struct:Ack_Session_Queue
+session_id	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.h	/^	unsigned int session_id : 5;$/;"	m	struct:ProHeader
+session_id	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.h	/^	unsigned int session_id : 5;$/;"	m	struct:Session_Queue
+session_id	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.h	/^	unsigned short session_id : 8;$/;"	m	struct:ProAckParameter
+session_status	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.h	/^	unsigned int session_status:2;$/;"	m	struct:Ack_Session_Queue
+set_CamParameter	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.cpp	/^     void set_CamParameter( int exposure,int gain,int brightness){$/;"	f	class:DJI_Imag_Dect
+set_CamSize	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.cpp	/^     void set_CamSize( int width,int height){$/;"	f	class:DJI_Imag_Dect
+set_handler_tab	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Test.cpp	/^set_handler_table_t set_handler_tab[] =$/;"	v
+set_handler_table_t	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	/^}set_handler_table_t;$/;"	t	typeref:struct:_set_tab
+setupVideo	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.cpp	/^    void setupVideo(int i ,int  j) {$/;"	f	class:DJI_Imag_Dect
+simple_task_num	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Test.cpp	/^static int simple_task_num = -1;$/;"	v	file:
+sof	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.h	/^	unsigned int sof : 8; \/\/ 1byte$/;"	m	struct:__anon3
+sof	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.h	/^	unsigned int sof : 8; 			\/\/ 1byte$/;"	m	struct:ProHeader
+spin_callback	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Test.cpp	/^void spin_callback(void)$/;"	f
+srcImage	.\ball and square.cpp	/^Mat srcImage, midImage, dstImage,ballImage;$/;"	v
+src_Image1	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.cpp	/^ Mat src_Image1;$/;"	v
+src_Image2	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.cpp	/^ Mat src_Image2;$/;"	v
+start_addr	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.h	/^	unsigned long start_addr;$/;"	m	struct:Memory_Manage_Unit
+statues	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.cpp	/^Statues statues =detect_line;\/\/全局设置图像检测的状态位，从而改变图像算法$/;"	v
+status	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	/^	unsigned char			status;$/;"	m	struct:__anon15
+status	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Test.h	/^    int status;$/;"	m	struct:__anon2
+status_lock_s	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Test.cpp	/^static pthread_mutex_t status_lock_s = PTHREAD_MUTEX_INITIALIZER;$/;"	v	file:
+tagAES256Context	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.cpp	/^typedef struct tagAES256Context {$/;"	s	file:
+test_activation_ack_cmd_callback	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Test.cpp	/^void test_activation_ack_cmd_callback(ProHeader *header)$/;"	f
+test_all	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Test.cpp	/^void test_all(bool &is_init)$/;"	f
+test_cmd_is_resend	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Test.cpp	/^static unsigned char test_cmd_is_resend = 0;$/;"	v	file:
+test_cmd_send_flag	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Test.cpp	/^static unsigned char test_cmd_send_flag = 1;$/;"	v	file:
+test_version_query	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Test.cpp	/^void test_version_query(void)$/;"	f
+test_version_query_ack_cmd_callback	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Test.cpp	/^void test_version_query_ack_cmd_callback(ProHeader *header)$/;"	f
+thinImage	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.cpp	/^Mat thinImage(Mat srcImage, int maxIterations)$/;"	f
+thr_z	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	/^	fp32	thr_z;$/;"	m	struct:__anon9
+threshval	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.cpp	/^int threshval = 20;$/;"	v
+threshval	.\ball and square.cpp	/^int threshval = 20;$/;"	v
+throttle	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	/^	int16_t	throttle;$/;"	m	struct:__anon13
+tic	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.cpp	/^double tic() {$/;"	f
+time_stamp	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	/^	unsigned int		time_stamp;$/;"	m	struct:__anon15
+ts	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.cpp	/^  struct timespec ts;$/;"	v	typeref:struct:timespec
+uav_data_to_ground	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Test.h	/^}uav_data_to_ground;$/;"	t	typeref:struct:__anon2
+uav_height	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Test.cpp	/^float uav_height;$/;"	v
+usage	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.h	/^const string usage = "\\n"$/;"	v
+usage_flag	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.h	/^	unsigned char usage_flag;$/;"	m	struct:Memory_Manage_Unit
+usage_flag	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.h	/^	unsigned int usage_flag : 1;$/;"	m	struct:Session_Queue
+v	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	/^	sdk_3_12B_data_t	v;$/;"	m	struct:__anon15
+v_hist	.\SDK_Zeus\control\sdk_lib\DJI_Imag_Dect.cpp	/^Mat v_hist;$/;"	v
+version	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Codec.h	/^	unsigned int version : 6; \/\/ 2byte$/;"	m	struct:__anon3
+version	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Link.h	/^	unsigned int version : 6; 		\/\/ 2byte$/;"	m	struct:ProHeader
+version_ack	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	/^	unsigned short	version_ack;$/;"	m	struct:__anon21
+version_crc	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	/^	unsigned int	version_crc;$/;"	m	struct:__anon21
+version_name	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	/^	char     	version_name[32];$/;"	m	struct:__anon21
+version_query_data_t	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	/^}version_query_data_t;$/;"	t	typeref:struct:__anon21
+videoname	.\SDK_Zeus\control\main.cpp	/^char videoname[20];$/;"	v
+vo_data	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Test.cpp	/^VO_OUTPUT vo_data;$/;"	v
+vx	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Test.h	/^        float vx;$/;"	m	struct:__anon1
+vy	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Test.h	/^        float vy;$/;"	m	struct:__anon1
+vz	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Test.h	/^        float vz;$/;"	m	struct:__anon1
+w	.\SDK_Zeus\control\sdk_lib\DJI_Control.h	/^	float	w;$/;"	m	struct:__anon8
+w	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	/^	sdk_3_12B_data_t	w;$/;"	m	struct:__anon15
+w	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Test.h	/^    float w;$/;"	m	struct:__anon2
+wrVideo	.\SDK_Zeus\control\main.cpp	/^VideoWriter wrVideo;$/;"	v
+x	.\SDK_Zeus\control\main.cpp	/^float R_kp,R_kd,T_kp,T_kd,x,Height_Set;$/;"	v
+x	.\SDK_Zeus\control\sdk_lib\DJI_Control.h	/^	float	x;$/;"	m	struct:__anon8
+x	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	/^	fp32	x;$/;"	m	struct:__anon11
+x	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	/^	int16_t	x;$/;"	m	struct:__anon14
+x	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Test.h	/^        float x;$/;"	m	struct:__anon1
+x	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Test.h	/^    float x;$/;"	m	struct:__anon2
+y	.\SDK_Zeus\control\sdk_lib\DJI_Control.h	/^	float	y;$/;"	m	struct:__anon8
+y	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	/^	fp32	y;$/;"	m	struct:__anon11
+y	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	/^	int16_t	y;$/;"	m	struct:__anon14
+y	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Test.h	/^        float y;$/;"	m	struct:__anon1
+y	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Test.h	/^    float y;$/;"	m	struct:__anon2
+yaw	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	/^	fp32	yaw;$/;"	m	struct:__anon9
+yaw	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	/^	int16_t	yaw;$/;"	m	struct:__anon13
+yaw_degree	.\SDK_Zeus\control\sdk_lib\DJI_Control.h	/^	float	yaw_degree;$/;"	m	struct:__anon7
+z	.\SDK_Zeus\control\sdk_lib\DJI_Control.h	/^	float	z;$/;"	m	struct:__anon8
+z	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	/^	fp32	z;$/;"	m	struct:__anon11
+z	.\SDK_Zeus\control\sdk_lib\DJI_Pro_App.h	/^	int16_t	z;$/;"	m	struct:__anon14
+z	.\SDK_Zeus\control\sdk_lib\DJI_Pro_Test.h	/^        float z;$/;"	m	struct:__anon1

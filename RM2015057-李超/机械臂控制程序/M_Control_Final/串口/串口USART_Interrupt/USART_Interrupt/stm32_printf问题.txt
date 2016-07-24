@@ -1,0 +1,70 @@
+STM32串口通信中使用printf发送数据配置方法(开发环境 Keil RVMDK)
+标签:  STM32  串口通信  printf方法  2011-06-29 23:29 
+在STM32串口通信程序中使用printf发送数据，非常的方便。可在刚开始使用的时候总是遇到问题，常见的是硬件访真时无法进入main主函数，其实只要简单的配置一下就可以了。
+ 
+下面就说一下使用printf需要做哪些配置。
+ 
+有两种配置方法：
+一、对工程属性进行配置，详细步骤如下
+1、首先要在你的main 文件中 包含“stdio.h” （标准输入输出头文件）。
+2、在main文件中重定义<fputc>函数    如下：
+   // 发送数据
+   int fputc(int ch, FILE *f)
+   {
+      USART_SendData(USART1, (unsigned char) ch);// USART1 可以换成 USART2 等
+      while (!(USART1->SR & USART_FLAG_TXE));
+      return (ch);
+   }
+   // 接收数据
+   int GetKey (void)  { 
+      while (!(USART1->SR & USART_FLAG_RXNE));
+      return ((int)(USART1->DR & 0x1FF));
+   }
+   这样在使用printf时就会调用自定义的fputc函数，来发送字符。
+3、在工程属性的 “Target" -> "Code Generation" 选项中勾选 "Use MicroLIB"” 
+   MicroLIB 是缺省C的备份库，关于它可以到网上查找详细资料。
+ 
+至此完成配置，在工程中可以随意使用printf向串口发送数据了。
+ 
+二、第二种方法是在工程中添加“Regtarge.c”文件
+1、在main文件中包含 “stdio.h” 文件
+2、在工程中创建一个文件保存为 Regtarge.c ， 然后将其添加工程中
+在文件中输入如下内容（直接复制即可）
+#include <stdio.h>
+#include <rt_misc.h>
+#pragma import(__use_no_semihosting_swi)
+extern int  SendChar(int ch); // 声明外部函数，在main文件中定义
+extern int  GetKey(void);
+struct __FILE {
+  int handle;                 // Add whatever you need here 
+};
+FILE __stdout;
+FILE __stdin;
+int fputc(int ch, FILE *f) {
+  return (SendChar(ch));
+}
+int fgetc(FILE *f) {
+  return (SendChar(GetKey()));
+}
+void _ttywrch(int ch) {
+ SendChar (ch);
+}
+int ferror(FILE *f) {                            // Your implementation of ferror
+  return EOF;
+}
+void _sys_exit(int return_code) {
+label:  goto label;           // endless loop
+}
+
+3、在main文件中添加定义以下两个函数
+int SendChar (int ch)  {
+  while (!(USART1->SR & USART_FLAG_TXE)); // USART1 可换成你程序中通信的串口
+  USART1->DR = (ch & 0x1FF);
+  return (ch);
+}
+int GetKey (void)  {
+  while (!(USART1->SR & USART_FLAG_RXNE));
+  return ((int)(USART1->DR & 0x1FF));
+}
+至此完成配置，可以在main文件中随意使用 printf 。
+ 
